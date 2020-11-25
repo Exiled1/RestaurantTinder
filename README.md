@@ -34,3 +34,7 @@ An application to help people decide where they want to eat by randomly recommen
 -   MongoDB - This is a database to store info in
     
     > **Reason:** Well, we don't really *need* a database for everything that we need, but since the assignment is telling us to do it, we'll do it \**shrug*.\* If you guys have a database service that you guys are partial to, feel free to bring it up or put it in this channel. But anyways, we could potentially use this to hold previous searches, but I don't know how that would work without making a verified user thing, which requires encryption and that's a lot of work unless we use OAuth and only make this usable through google, or we could make a login with PHP and HTML. (This is obviously something on the backburner and should not take precedence until much later in the development cycle)
+    
+-   Node.js - Deploy/Hosting system, and also package manager
+    
+    > **Reason:** It's required. Also it allows us to run JS w/o a web browser I believe.
