@@ -16,12 +16,14 @@ var port = 3000;
 app.engine('handlebars', exphbs({ defaultLayout: 'main' }));
 app.set('view engine', 'handlebars');
 
+app.use(express.static('public'));
+
 app.get('/', function (req, res) {
   console.log("CS290 work in project");
   res.status(200);
 });
 
-app.use(express.static('public'));
+
 
 app.get('/', function(req, res) {
     console.log("CS290 work in project");
