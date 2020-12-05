@@ -1,6 +1,6 @@
 /*****************
  *
- * Restaurant Tinder
+ * Restauranteur
  *
  ***************/
 
@@ -10,6 +10,9 @@ var exphbs = require('express-handlebars');
 
 var app = express();
 var port = 3000;
+
+app.engine('handlebars', exphbs({ defaultLayout: 'main' }));
+app.set('view engine', 'handlebars');
 
 app.get('/', function (req, res) {
   console.log("CS290 work in project");
