@@ -1,0 +1,37 @@
+{
+    "name": "restauranttinder",
+    "version": "1.0.0",
+    "description": "An application that recommends you random restraunts based on filter criteria.",
+    "main": "server.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "dev": "nodemon server.js",
+        "start": "node server.js",
+        "build": "handlebars views/homepage.handlebars -f homepage.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Exiled1/RestaurantTinder.git"
+    },
+    "keywords": [
+        "SASS",
+        "Handlebars",
+        "Express",
+        "Express-handlebars"
+    ],
+    "author": "Rudy P., Stuart A,, Zach E.",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/Exiled1/RestaurantTinder/issues"
+    },
+    "homepage": "https://github.com/Exiled1/RestaurantTinder#readme",
+    "dependencies": {
+        "express": "^4.17.1",
+        "express-handlebars": "^5.2.0",
+        "handlebars": "^4.7.6",
+        "sass": "^1.29.0"
+    },
+    "devDependencies": {
+        "nodemon": "^2.0.6"
+    }
+}
