@@ -7,9 +7,7 @@
         "test": "echo \"Error: no test specified\" && exit 1",
         "dev": "nodemon server.js",
         "start": "node server.js",
-        "build": "handlebars views/homepage.handlebars -f public/homepage.js"
-        
-        
+        "build": "handlebars views/partials -f public/all-templates.js"
     },
     "repository": {
         "type": "git",
