@@ -7,7 +7,7 @@
         "test": "echo \"Error: no test specified\" && exit 1",
         "dev": "nodemon server.js",
         "start": "node server.js",
-        "build": "handlebars views/homepage.handlebars -f homepage.js"
+        "build": "handlebars views/partials -f public/all-templates.js"
     },
     "repository": {
         "type": "git",
@@ -19,7 +19,7 @@
         "Express",
         "Express-handlebars"
     ],
-    "author": "Rudy P., Stuart A,, Zach E.",
+    "author": "Rudy P., Stuart A., Zach E.",
     "license": "MIT",
     "bugs": {
         "url": "https://github.com/Exiled1/RestaurantTinder/issues"
