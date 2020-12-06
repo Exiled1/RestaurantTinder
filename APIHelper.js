@@ -59,7 +59,7 @@ class APIHelper {
                 throw error;
             });
         
-        console.log(clientOutput); // This is for debug purposes, I'm still not returning anything yet.
+        // console.log(clientOutput); // This is for debug purposes, I'm still not returning anything yet.
         return clientOutput.data.results; // This returns the json object back to where it's called.
     }
 }
