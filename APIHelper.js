@@ -46,16 +46,16 @@ class APIHelper {
                     params: {
                         location: this.userLocation,
                         radius: this.userRadius,
-                        type: "food", // play around with this parameter, because it may not get back every specific restaurant that I need, especially if it's not called a restaurant.
+                        type: "restaurant", // play around with this parameter, because it may not get back every specific restaurant that I need, especially if it's not called a restaurant.
                         key: process.env.GOOGLE_MAPS_API_KEY
                     },
                     timeout: 2000 // milliseconds to wait for the request, otherwise, send an error. 
                 },
                 defaultAxiosInstance // I still dunno what an axios instance is, but the API needs it.
             )
-            .catch(error => {
+            .catch((error) => {
                 // if there's an error, catch the error and throw it.
-                console.log(error);
+                console.log(error.response.data.error_message);
                 throw error;
             });
         
