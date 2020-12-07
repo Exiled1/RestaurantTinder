@@ -7,7 +7,9 @@
         "test": "echo \"Error: no test specified\" && exit 1",
         "dev": "nodemon server.js",
         "start": "node server.js",
-        "build": "handlebars views/homepage.handlebars -f homepage.js"
+        "build": "handlebars views/homepage.handlebars -f public/homepage.js"
+        
+        
     },
     "repository": {
         "type": "git",
@@ -19,13 +21,15 @@
         "Express",
         "Express-handlebars"
     ],
-    "author": "Rudy P., Stuart A,, Zach E.",
+    "author": "Rudy P., Stuart A., Zach E.",
     "license": "MIT",
     "bugs": {
         "url": "https://github.com/Exiled1/RestaurantTinder/issues"
     },
     "homepage": "https://github.com/Exiled1/RestaurantTinder#readme",
     "dependencies": {
+        "@googlemaps/google-maps-services-js": "^3.1.13",
+        "dotenv": "^8.2.0",
         "express": "^4.17.1",
         "express-handlebars": "^5.2.0",
         "handlebars": "^4.7.6",
