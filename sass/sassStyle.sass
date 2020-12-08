@@ -16,6 +16,9 @@ $card-height: 500px
 $card-width: 250px
 $card-margin: 50px
 
+$button-size: 100px
+$button-font-size: 50px
+
 body
 	margin: 0
 	border: 0
@@ -58,3 +61,17 @@ body
 	height: $card-height
 	width: $card-width
 	
+#button-container
+	display: flex
+	flex-direction: row
+	justify-content: space-around
+	align-content: center
+
+button 
+	width: $button-size
+	height: $button-size
+	border-radius: $button-size / 2
+	border: none
+	background-color: $primary-blue
+	color: $primary-pink
+	font-size: $button-font-size
