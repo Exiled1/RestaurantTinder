@@ -1,5 +1,5 @@
 /*	TODO change this to dani's font	*/
-$main-font: 'Merriweather', sans-serif
+$main-font: 'Philosopher', sans-serif
 /*	Colors	*/
 $primary-pink: #e87ea3
 $primary-orange: #F79C81
@@ -7,6 +7,42 @@ $primary-blue: #223C78
 $secondary-blue: #AFD6D7
 $background-grey: #E9EBEf
 
+$header-size: 200px
+$icon-box-dimensions: 100px
+$title-font-size: 100px
+
 body
+	margin: 0
+	border: 0
 	font: $main-font
 	color: $primary-blue
+	background-color: $background-grey
+
+#header-bar
+	height: $header-size
+	background-color: $primary-pink
+	font-size: $title-font-size
+	display: flex
+	flex-direction: row
+	align-items: center
+	justify-content: space-between
+
+#header-bar-settings-icon
+	margin: ( $header-size - $icon-box-dimensions ) / 2
+	height: $icon-box-dimensions
+	width: auto
+
+#header-space-holder
+	margin: ( $header-size - $icon-box-dimensions ) / 2
+	height: $icon-box-dimensions
+	width: $icon-box-dimensions
+
+#header-bar-text
+	text-decoration: none
+
+#lr-card-container
+	display: flex
+	flex-direction: row
+
+.card-container
+	background-color: $primary-orange
