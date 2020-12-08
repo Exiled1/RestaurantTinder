@@ -98,8 +98,4 @@ async function createAPIHelper(userLocation, userRadius) {
     return apiHelper; // return it.
 }
 
-<<<<<<< HEAD
 module.exports = createAPIHelper;
-=======
-module.exports = createAPIHelper;
->>>>>>> a3773181eff5237071ae1380802880cceb80e392
