@@ -19,7 +19,7 @@ app.use(express.static('public'));
 
 
 app.get('/', function (req, res) {
-    console.log("CS290 work in project");
+    console.log("CS290 work in process");
     res.status(200);
 });
 
@@ -34,11 +34,18 @@ app.get('/test', async function (req, res) {
     res.status(200);
 });
 
+app.post('/getRestaurant', function (req, res)
+{
+  //This is where the user would send their filters
+  //Call random restuarant function
+});
+
 app.get('*', function(req, res) {
     console.log("== 404 Page Would Be displayed");
     res.status(404);
 });
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 //Test
 =======
@@ -46,3 +53,8 @@ app.listen(port, function() {
     console.log("== Server is listening on port", port);
 });
 >>>>>>> 18ac8b6... Added helper functions, updated package, fixed conflicts on server.js
+=======
+app.listen(port, function() {
+    console.log("== Server is listening on port", port);
+});
+>>>>>>> bd5184b... Added basic .post
