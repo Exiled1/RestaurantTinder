@@ -1,30 +1,33 @@
+
 /**
  * This is Rudy's API Helper module, it takes a user's current 
  * location and returns all of the nearby data that we need to make the app work.
+ * To use this class you need to first create an **APIHelper** instance and assign it to a variable.
+ * To initialize the Google API, you must use the **await** method with **apiInit**, after you use the apiInit() function,
+ * you can then access the rest of the class methods as normal.
+ * @example 
+ * let apiHelper = new APIHelper([lat,lng], UserRadius); 
+ * await apiHelper.apiInit();
+ * @method **apiInit**
+ * @method **getRandomRestaurant**
+ * @author **Rudy P.**
+ * @field **apiDataObject**
  */
-
-class APIHelper {
-
+async class APIHelper {
+    apiDataObject; // This data object contains the API data.
+    
+    
     /**
-     * This is the main helper function I created to help us parse and work with the google places API,
-     * currently a couple of values are set as default and can't be changed, however, all you'd have to
-     * do is add them as parameters (if you wanted to set them by the user), and then add the relevant
-     * setting to the list of API parameters. As is, this is supposed to return a bunch of default data 
-     * that restraunteur needs to correctly display the relevant data.
      * 
-     * @param {Number} userLocation - This takes a user's latitude, longitude as an
-     *                                array, example: [lat,lng]
-     * 
-     * @param {Number} userRadius   - This takes a user's radius in meters, although, if the rankBy 
-     *                                setting (WIP) is set to distance, this can't be included
-     * 
+     * @param {Number} userLocation - Takes a latitude and longitude, [required].
+     * @param {Number} userRadius   - Takes a user radius, in meters. [optional].
      */
     constructor(userLocation, userRadius) {
         this.userLocation = userLocation;
         this.userRadius = userRadius;
     }
 
-    async nearbyPlaces() {
+    async apiInit() {
 
         if (process.env.NODE_ENV !== 'production') {
             // Checks the node environment, if it's not the production server, it won't require this configuration since we shouldn't be using a .env file in a production app, just during development.
@@ -58,11 +61,20 @@ class APIHelper {
                 console.log(error);
                 throw error;
             });
-        
+            
+        this.#apiDataObject = clientOutput.data.results;
         // console.log(clientOutput); // This is for debug purposes, I'm still not returning anything yet.
-        return clientOutput.data.results; // This returns the json object back to where it's called.
+        //return clientOutput.data.results; // This returns the json object back to where it's called.
     }
+
+    getRandomRestaurant(){
+        console.log("== Class Content");
+        console.log(this.#apiDataObject);
+    }
+
+    // End of class.
 }
+
 
 
 module.exports = APIHelper;
