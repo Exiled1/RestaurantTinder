@@ -8,7 +8,7 @@ var path = require('path');
 var express = require('express');
 var exphbs = require('express-handlebars');
 const APIHelper = require('./APIHelper');
-
+const latitudeLongitude = [45.409274, -122.722615];
 var app = express();
 var port = 3000;
 
@@ -19,7 +19,7 @@ app.use(express.static('public'));
 
 
 app.get('/', function (req, res) {
-  apiHelper = new APIHelper([45.409274, -122.722615], 6000);
+  let apiHelper = new APIHelper(latitudeLongitude, 6000);
 
   let placesObj = await apiHelper.apiInit();
 
@@ -30,7 +30,7 @@ app.get('/', function (req, res) {
 
 app.get('/test', async function (req, res) {
 
-    let apiHelper = new APIHelper([45.409274, -122.722615], 3000);
+    let apiHelper = new APIHelper(latitudeLongitude, 3000);
     // currently focused on a random albersons
     // with a 3000 mile radius.
 
@@ -42,10 +42,9 @@ app.get('/test', async function (req, res) {
 
 app.post('/rightRestaurant', function (req, res)
 {
-  let apiHelper = new APIHelper([45.409274, -122.722615], 6000);
+  let apiHelper = new APIHelper(latitudeLongitude, 6000);
 
   let placesObj = await apiHelper.apiInit();
-<<<<<<< HEAD
 
   res.status(200).render('homepage', {    //This should at some point actually make it so that restrauntprofile.handlebars is displayed
     placesObj: placesObj                  //Modification probably needs to be in the homepage.handlebars file
@@ -54,11 +53,9 @@ app.post('/rightRestaurant', function (req, res)
 
 app.post('/leftRestaurant', function (req, res)
 {
-  apiHelper = new APIHelper([45.409274, -122.722615], 6000);
+  let apiHelper = new APIHelper(latitudeLongitude, 6000);
 
   let placesObj = await apiHelper.apiInit();
-=======
->>>>>>> 0de8b3470f5e036723c58d0a620ef62547420c1e
 
   res.status(200).render('homepage', {
     placesObj: placesObj
