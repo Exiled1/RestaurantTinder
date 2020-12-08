@@ -24,7 +24,7 @@ app.get('/', function (req, res) {
 });
 
 app.get('/test', async function (req, res) {
-    
+
     apiHelper = new APIHelper([45.409274, -122.722615], 6000);
 
     let placesObj = await apiHelper.nearbyPlaces();
@@ -45,5 +45,3 @@ app.listen(port, function() {
     console.log("== Server is listening on port", port);
 });
 >>>>>>> c9ba05b280bbded7f170b042851d9ba3a9d8a836
-
-//Test
