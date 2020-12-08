@@ -7,8 +7,7 @@
  * @example
  * let apiHelper = new APIHelper([lat,lng], UserRadius);
  * await apiHelper.apiInit();
- * @method **apiInit**
- * @method **getRandomRestaurant**
+ * @method **apiInit( )**, **getRandomRestaurant( )**
  * @author **Rudy P.**
  * @field **apiDataObject**
  */
