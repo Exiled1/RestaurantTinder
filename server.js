@@ -45,8 +45,18 @@ app.post('/rightRestaurant', function (req, res)
 {
   apiHelper = new APIHelper([45.409274, -122.722615], 6000);
 
-  let placesObj = await apiHelper.getNearbyPlaces();
-  await apiHelper.apiInit();
+  let placesObj = await apiHelper.apiInit();
+
+  res.status(200).render('homepage', {    //This should at some point actually make it so that restrauntprofile.handlebars is displayed
+    placesObj: placesObj                  //Modification probably needs to be in the homepage.handlebars file
+  });
+});
+
+app.post('/leftRestaurant', function (req, res)
+{
+  apiHelper = new APIHelper([45.409274, -122.722615], 6000);
+
+  let placesObj = await apiHelper.apiInit();
 
   res.status(200).render('homepage', {
     placesObj: placesObj
