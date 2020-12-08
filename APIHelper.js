@@ -11,15 +11,15 @@
  * @author **Rudy P.**
  * @field **apiDataObject**
  */
-async class APIHelper {
+class APIHelper {
     apiDataObject; // This data object contains the API data.
 
 
     /**
      * @param {Number} userLocation - Takes a latitude and longitude, [required].
      * @param {Number} userRadius   - Takes a user radius, in meters. [optional].
-     * @example 
-     * let apiHelper = new APIHelper([lat,lng], UserRadius); 
+     * @example
+     * let apiHelper = new APIHelper([lat,lng], UserRadius);
      * await apiHelper.apiInit();
      * @methods **apiInit( )**, **getRandomRestaurant( )**
      * @field **apiDataObject**
@@ -31,8 +31,8 @@ async class APIHelper {
     /**
      * This method initializes the API, to call it use the await keyword, since it's an asyncronous function.
      * You only need to call this once. This will return the apiDataObject, however, you can now use different
-     *  methods inside the APIHelper class. If you want to access the data without using the 
-     * API ****(Not recommended)****, just use the apiDataObject field. 
+     *  methods inside the APIHelper class. If you want to access the data without using the
+     * API ****(Not recommended)****, just use the apiDataObject field.
      * @example await apiHelper.apiInit();
      */
     async apiInit() {
@@ -50,7 +50,7 @@ async class APIHelper {
 
         const client = new Client({}); // Google API Client should be private per instance that I use it.
         this.userLocation = [45.409274, -122.722615]
-        // Set as the default for testing purposes, points to an area that has a lot of food places nearby it. TODO: Remove this later. 
+        // Set as the default for testing purposes, points to an area that has a lot of food places nearby it. TODO: Remove this later.
 
         // Oh, also, for future research, the pageToken parameter has some promise.
         let clientOutput = await client.placesNearby({
@@ -75,7 +75,7 @@ async class APIHelper {
         return clientOutput.data.results; // This returns the json object back to where it's called.
     }
     /**
-     * Returns a random restaurant 
+     * Returns a random restaurant
      */
     getRandomRestaurant() {
         console.log("== Class Content");
