@@ -34,19 +34,17 @@ app.get('/test', async function (req, res) {
     // currently focused on a random albersons
     // with a 3000 mile radius.
 
-    let placesObj = await apiHelper.getNearbyPlaces();
-    await apiHelper.apiInit(); // get nearby places grabs the data, it doesn't return anything anymore.
-
+    let placesObj = await apiHelper.apiInit(); // this initializes the API Helper methods.
+    
     apiHelper.getRandomRestaurant();
     res.status(200);
 });
 
 app.post('/rightRestaurant', function (req, res)
 {
-  apiHelper = new APIHelper([45.409274, -122.722615], 6000);
+  let apiHelper = new APIHelper([45.409274, -122.722615], 6000);
 
-  let placesObj = await apiHelper.getNearbyPlaces();
-  await apiHelper.apiInit();
+  let placesObj = await apiHelper.apiInit();
 
   res.status(200).render('homepage', {
     placesObj: placesObj
