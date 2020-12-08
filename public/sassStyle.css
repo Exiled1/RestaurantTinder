@@ -1,6 +1,44 @@
 /*	TODO change this to dani's font	*/
 /*	Colors	*/
 body {
-  font: "Merriweather", sans-serif;
+  margin: 0;
+  border: 0;
+  font: "Philosopher", sans-serif;
   color: #223C78;
+  background-color: #E9EBEf;
+}
+
+#header-bar {
+  height: 200px;
+  background-color: #e87ea3;
+  font-size: 100px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#header-bar-settings-icon {
+  margin: 50px;
+  height: 100px;
+  width: auto;
+}
+
+#header-space-holder {
+  margin: 50px;
+  height: 100px;
+  width: 100px;
+}
+
+#header-bar-text {
+  text-decoration: none;
+}
+
+#lr-card-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.card-container {
+  background-color: #F79C81;
 }
