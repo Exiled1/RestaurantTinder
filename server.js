@@ -32,8 +32,6 @@ app.get('/', async function (req, res) {
 });
 
 app.get('/test', async function (req, res) {
-    
-    apiHelper = new APIHelper([45.409274, -122.722615], 6000);
 
     let apiHelper = await createAPIHelper(latitudeLongitude, 3000);
     apiHelper.getRandomRestaurant();

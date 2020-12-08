@@ -1,5 +1,5 @@
 /**
- * This is Rudy's API Helper module, it takes a user's current 
+ * This is Rudy's API Helper module, it takes a user's current
  * location and returns all of the nearby data that we need to make the app work.
  * To use my API Helper you just need to await the relevant createAPIHelper function and it'll 
  * create an instance of the APIHelper class, from there you can use all the class methods
@@ -98,4 +98,8 @@ async function createAPIHelper(userLocation, userRadius) {
     return apiHelper; // return it.
 }
 
+<<<<<<< HEAD
 module.exports = createAPIHelper;
+=======
+module.exports = createAPIHelper;
+>>>>>>> a3773181eff5237071ae1380802880cceb80e392
