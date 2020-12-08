@@ -33,12 +33,14 @@
 		<div id="header-space-holder"></div>
 	</div>
     <div id="card-content-container">
-	  
       {{{body}}}
-
     </div>
-    <div> Buttons HTML here </div>
-    <div> Settings menu HTML here (I'm assuming it'll be a modal) </div>
+    <div id="button-container"> 
+		{{> buttons}}
+	</div>
+    <div> 
+		{{> settingsmenu }}
+	</div>
 
   </body>
 </html>
