@@ -35,7 +35,7 @@ app.get('/test', async function (req, res) {
     // with a 3000 mile radius.
 
     let placesObj = await apiHelper.apiInit(); // this initializes the API Helper methods.
-    
+
     apiHelper.getRandomRestaurant();
     res.status(200);
 });
