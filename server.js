@@ -46,6 +46,7 @@ app.post('/rightRestaurant', function (req, res)
   apiHelper = new APIHelper([45.409274, -122.722615], 6000);
 
   let placesObj = await apiHelper.getNearbyPlaces();
+  await apiHelper.apiInit();
 
   res.status(200).render('homepage', {
     placesObj: placesObj
@@ -56,13 +57,7 @@ app.get('*', function(req, res) {
     console.log("== 404 Page Would Be displayed");
     res.status(404);
 });
+
 app.listen(port, function() {
     console.log("== Server is listening on port", port);
 });
-=======
-app.listen(port, function() {
-    console.log("== Server is listening on port", port);
-});
->>>>>>> bd5184b... Added basic .post
-=======
->>>>>>> 5f334e24b4f61b6dec693afaad89df1260f11fe5
