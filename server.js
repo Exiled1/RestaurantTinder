@@ -19,7 +19,7 @@ app.use(express.static('public'));
 
 
 app.get('/', function (req, res) {
-    console.log("CS290 work in project");
+    console.log("CS290 work in process");
     res.status(200);
 });
 
@@ -34,14 +34,17 @@ app.get('/test', async function (req, res) {
     res.status(200);
 });
 
+app.post('/getRestaurant', function (req, res)
+{
+  //This is where the user would send their filters
+  //Call random restuarant function
+});
+
 app.get('*', function(req, res) {
     console.log("== 404 Page Would Be displayed");
     res.status(404);
 });
 
-<<<<<<< HEAD
-=======
 app.listen(port, function() {
     console.log("== Server is listening on port", port);
 });
->>>>>>> c9ba05b280bbded7f170b042851d9ba3a9d8a836
