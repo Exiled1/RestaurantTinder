@@ -3,7 +3,7 @@
 body {
   margin: 0;
   border: 0;
-  font: "Philosopher", sans-serif;
+  font-family: "Philosopher", sans-serif;
   color: #223C78;
   background-color: #E9EBEf;
 }
