@@ -19,25 +19,35 @@ app.use(express.static('public'));
 
 
 app.get('/', function (req, res) {
-    console.log("CS290 work in process");
-    res.status(200);
+  apiHelper = new APIHelper([45.409274, -122.722615], 6000);
+
+  let placesObj = await apiHelper.getNearbyPlaces();
+
+  res.status(200).render('homepage', {
+    placesObj: placesObj
+  });
 });
 
 app.get('/test', async function (req, res) {
 
     apiHelper = new APIHelper([45.409274, -122.722615], 6000);
 
-    let placesObj = await apiHelper.nearbyPlaces();
+    let placesObj = await apiHelper.getNearbyPlaces();
 
     console.log("== Data Recieved");
     console.log(placesObj);
     res.status(200);
 });
 
-app.post('/getRestaurant', function (req, res)
+app.post('/rightRestaurant', function (req, res)
 {
-  //This is where the user would send their filters
-  //Call random restuarant function
+  apiHelper = new APIHelper([45.409274, -122.722615], 6000);
+
+  let placesObj = await apiHelper.getNearbyPlaces();
+
+  res.status(200).render('homepage', {
+    placesObj: placesObj
+  });
 });
 
 app.get('*', function(req, res) {
