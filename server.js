@@ -35,7 +35,7 @@ app.get('/test', async function (req, res) {
     // with a 3000 mile radius.
 
     let placesObj = await apiHelper.apiInit(); // this initializes the API Helper methods.
-    
+
     apiHelper.getRandomRestaurant();
     res.status(200);
 });
@@ -45,7 +45,6 @@ app.post('/rightRestaurant', function (req, res)
   let apiHelper = new APIHelper([45.409274, -122.722615], 6000);
 
   let placesObj = await apiHelper.apiInit();
-<<<<<<< HEAD
 
   res.status(200).render('homepage', {    //This should at some point actually make it so that restrauntprofile.handlebars is displayed
     placesObj: placesObj                  //Modification probably needs to be in the homepage.handlebars file
@@ -57,8 +56,6 @@ app.post('/leftRestaurant', function (req, res)
   apiHelper = new APIHelper([45.409274, -122.722615], 6000);
 
   let placesObj = await apiHelper.apiInit();
-=======
->>>>>>> 0de8b3470f5e036723c58d0a620ef62547420c1e
 
   res.status(200).render('homepage', {
     placesObj: placesObj
