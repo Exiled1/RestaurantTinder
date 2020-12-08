@@ -11,6 +11,10 @@ $header-size: 200px
 $icon-box-dimensions: 100px
 $title-font-size: 100px
 
+$card-height: 500px
+$card-width: 250px
+$card-margin: 50px
+
 body
 	margin: 0
 	border: 0
@@ -40,9 +44,16 @@ body
 #header-bar-text
 	text-decoration: none
 
-#lr-card-container
+#card-content-container
 	display: flex
 	flex-direction: row
+	justify-content: center
+	align-content: center
+	
 
 .card-container
+	margin: $card-margin
 	background-color: $primary-orange
+	height: $card-height
+	width: $card-width
+	
