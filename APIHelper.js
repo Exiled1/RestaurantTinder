@@ -58,7 +58,7 @@ async function createAPIHelper(userLocation, userRadius) {
             } = require("@googlemaps/google-maps-services-js"); // Initializing the client and an axios instance.
 
             const client = new Client({}); // Google API Client should be private per instance that I use it.
-            this.userLocation = [45.409274, -122.722615]
+            // this.userLocation = [45.409274, -122.722615]
             // Set as the default for testing purposes, points to an area that has a lot of food places nearby it. TODO: Remove this later.
 
             // Oh, also, for future research, the pageToken parameter has some promise.
