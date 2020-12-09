@@ -14,21 +14,17 @@ var port = 3000;
 
 
 
-app.engine('handlebars', exphbs({
-    defaultLayout: 'main'
-}));
+app.engine('handlebars', exphbs({ defaultLayout: 'main' }));
 app.set('view engine', 'handlebars');
-
-app.use(express.static('public'));
 
 
 app.get('/', async function (req, res) {
     let apiHelper = await createAPIHelper(latitudeLongitude, 3000);
     apiHelper.getRandomRestaurant();
 
-    res.status(200).render('homepage', {
-        placesObj: placesObj
-    });
+    console.log("Call to /");
+
+    res.status(200).render('homepage', placesObj);
 });
 
 app.get('/test', async function (req, res) {
@@ -52,12 +48,14 @@ app.post('/rightRestaurant', async function (req, res) {
 app.post('/leftRestaurant', async function (req, res) {
     let apiHelper = await createAPIHelper(latitudeLongitude, 3000);
 
-    let placesObj = apiHelper.apiDataObject; 
+    let placesObj = apiHelper.apiDataObject;
 
     res.status(200).render('homepage', {
         placesObj: placesObj
     });
 });
+
+app.use(express.static('public')); //Leave this here. I'm getting a 404 if it's any higher up
 
 app.get('*', function (req, res) {
     console.log("== 404 Page Would Be displayed");
