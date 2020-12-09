@@ -1,14 +1,14 @@
 /**
  * This is Rudy's API Helper module, it takes a user's current
  * location and returns all of the nearby data that we need to make the app work.
- * To use my API Helper you just need to await the relevant createAPIHelper function and it'll 
+ * To use my API Helper you just need to await the relevant createAPIHelper function and it'll
  * create an instance of the APIHelper class, from there you can use all the class methods
  * without any trouble. You can also access the apiDataObject from this as well.
  * One thing to watch out for though, is that if you're using this in a function like a middleware
  * function, remember to use the **async** keyword for every function you want to use this in.
- * 
+ *
  * @param {Number} userLocation - Takes a latitude and longitude, [required].
- * @param {Number} userRadius   - Takes a user radius, in meters. [optional]. 
+ * @param {Number} userRadius   - Takes a user radius, in meters. [optional].
  * @example
  * let apiHelper = await createAPIHelper(Latitude_Longitude, Radius_In_Meters);
 
@@ -22,16 +22,16 @@ async function createAPIHelper(userLocation, userRadius) {
          * Contains the APIHelper class. which contains various functions to assist in the manipulation of the API
          * @param {Number} userLocation - Takes a latitude and longitude, [required].
          * @param {Number} userRadius   - Takes a user radius, in meters. [optional].
-         * @example 
+         * @example
          * let apiHelper = await createAPIHelper(latitudeLongitude, 3000);
          * @methods **apiInit( )**, **getRandomRestaurant( )**
          * @field **apiDataObject**
          */
     class APIHelper {
         apiDataObject; // This data object contains the API data.
-        // create a private restaurant list. 
+        // create a private restaurant list.
         #restaurauntList;
-        
+
         constructor(userLocation, userRadius) {
             this.#restaurauntList = [];
             this.userLocation = userLocation;
@@ -40,8 +40,8 @@ async function createAPIHelper(userLocation, userRadius) {
         /**
          * This method initializes the API, to call it use the await keyword, since it's an asyncronous function.
          * You only need to call this once. This will return the apiDataObject, however, you can now use different
-         *  methods inside the APIHelper class. If you want to access the data without using the 
-         * API ****(Not recommended)****, just use the apiDataObject field. 
+         *  methods inside the APIHelper class. If you want to access the data without using the
+         * API ****(Not recommended)****, just use the apiDataObject field.
          * @example await apiHelper.apiInit();
          */
         async apiInit() {
@@ -59,7 +59,7 @@ async function createAPIHelper(userLocation, userRadius) {
 
             const client = new Client({}); // Google API Client should be private per instance that I use it.
             this.userLocation = [45.409274, -122.722615]
-            // Set as the default for testing purposes, points to an area that has a lot of food places nearby it. TODO: Remove this later. 
+            // Set as the default for testing purposes, points to an area that has a lot of food places nearby it. TODO: Remove this later.
 
             // Oh, also, for future research, the pageToken parameter has some promise.
             let clientOutput = await client.placesNearby({
@@ -84,7 +84,7 @@ async function createAPIHelper(userLocation, userRadius) {
             return clientOutput.data.results; // This returns the json object back to where it's called.
         }
         /**
-         * Returns a random restaurant 
+         * Returns a random restaurant
          */
         getRandomRestaurant() {
             console.log("== Class Content");
