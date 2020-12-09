@@ -11,7 +11,6 @@
  * @param {Number} userRadius   - Takes a user radius, in meters. [optional]. 
  * @example
  * let apiHelper = await createAPIHelper(Latitude_Longitude, Radius_In_Meters);
-
  * @method **apiInit( )**, **getRandomRestaurant( )**
  * @author **Rudy P.**
  * @field **apiDataObject**
