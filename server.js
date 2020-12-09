@@ -22,9 +22,11 @@ app.get('/', async function (req, res) {
     let apiHelper = await createAPIHelper(latitudeLongitude, 3000);
     apiHelper.getRandomRestaurant();
 
-    console.log("Call to /");
+    let places = await apiHelper.apiInit();
 
-    res.status(200).render('homepage', apiHelper.apiInit());
+    console.log("\n\n", places[1]);
+
+    res.status(200).render('homepage', places[1]);
 });
 
 app.get('/test', async function (req, res) {
