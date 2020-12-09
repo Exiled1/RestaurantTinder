@@ -24,7 +24,7 @@ app.get('/', async function (req, res) {
 
     console.log("Call to /");
 
-    res.status(200).render('homepage', placesObj);
+    res.status(200).render('homepage', apiHelper.apiInit());
 });
 
 app.get('/test', async function (req, res) {
