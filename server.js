@@ -2,22 +2,25 @@
  *
  * Restaurant Tinder Server Code.
  *
+ * Authors: Zach E., Stuart A., Rudy P.
  ***************/
 
+//Setting up variables
 var path = require('path');
 var express = require('express');
 var exphbs = require('express-handlebars');
 const createAPIHelper = require('./APIHelper');
-const latitudeLongitude = [45.409274, -122.722615];
+var latitudeLongitude = [45.409274, -122.722615]; //Default value if the user doesn't share their location
 var app = express();
 var port = 3000;
 
 
-
+//Setup layout
 app.engine('handlebars', exphbs({ defaultLayout: 'main' }));
 app.set('view engine', 'handlebars');
 
-
+//Simple get function using a predefined long and lat
+//Renders a page with a completely random restaurant
 app.get('/', async function (req, res) {
     let apiHelper = await createAPIHelper(latitudeLongitude, 3000);
 
@@ -25,14 +28,14 @@ app.get('/', async function (req, res) {
 
     var rdmIdx = Math.floor(Math.random() * places.length);
 
-    var fields = detectFields(places[rdmIdx]);
-
     res.status(200).render('homepage', {
       restaurant: places[rdmIdx],
-      profile: false
+      profile: false,
+      fields: detectFields(places[rdmIdx]);
     });
 });
 
+//Test function. Can be removed here soon
 app.get('/test', async function (req, res) {
 
     let apiHelper = await createAPIHelper(latitudeLongitude, 3000);
@@ -41,6 +44,7 @@ app.get('/test', async function (req, res) {
     res.status(200);
 });
 
+//Post function called when the user wants more information about the restaurant
 app.post('/rightRestaurant', async function (req, res) {
     let apiHelper = await createAPIHelper(latitudeLongitude, 3000); // creates an instance of the API Helper class.
 
@@ -112,4 +116,6 @@ function detectFields(restaurant)
   {
     fields.totalReviews = false;
   }
+
+  return fields;
 }
