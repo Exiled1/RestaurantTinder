@@ -20,13 +20,17 @@ app.set('view engine', 'handlebars');
 
 app.get('/', async function (req, res) {
     let apiHelper = await createAPIHelper(latitudeLongitude, 3000);
-    apiHelper.getRandomRestaurant();
 
     let places = await apiHelper.apiInit();
 
-    console.log("\n\n", places[1]);
+    var rdmIdx = Math.floor(Math.random() * places.length);
 
-    res.status(200).render('homepage', places[1]);
+    var fields = detectFields(places[rdmIdx]);
+
+    res.status(200).render('homepage', {
+      restaurant: places[rdmIdx],
+      profile: false
+    });
 });
 
 app.get('/test', async function (req, res) {
@@ -67,3 +71,45 @@ app.get('*', function (req, res) {
 app.listen(port, function () {
     console.log("== Server is listening on port", port);
 });
+
+function detectFields(restaurant)
+{
+  var fields = {
+    open: true,
+    price: true,
+    dineIn: true,
+    takeOut: true,
+    name: true,
+    rating: true,
+    totalReviews: true,
+  }
+
+  if(!restaurant.hasOwnProperty('opening_hours.open_now'))
+  {
+    fields.open = false;
+  }
+  if(!restaurant.hasOwnProperty('price_level'))
+  {
+    fields.price = false;
+  }
+  if(!restaurant.hasOwnProperty('has_dine_in'))
+  {
+    fields.dineIn = false;
+  }
+  if(!restaurant.hasOwnProperty('has_take_out'))
+  {
+    fields.takeOut = false;
+  }
+  if(!restaurant.hasOwnProperty('name'))
+  {
+    fields.name = false;
+  }
+  if(!restaurant.hasOwnProperty('rating'))
+  {
+    fields.rating = false;
+  }
+  if(!restaurant.hasOwnProperty('user_ratings_total'))
+  {
+    fields.totalReviews = false;
+  }
+}
