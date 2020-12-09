@@ -59,7 +59,7 @@ app.use(express.static('public')); //Leave this here. I'm getting a 404 if it's 
 
 app.get('*', function (req, res) {
     console.log("== 404 Page Would Be displayed");
-    res.status(404);
+    res.status(404).send("404");
 });
 
 app.listen(port, function () {
