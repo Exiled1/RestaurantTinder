@@ -1,5 +1,7 @@
 <div id="card-content-container">
 	{{> leftCard}}
 	{{> rightCard}}
-  <!-- In here add something to display the restrauntprofile -->
+  {{#if profile}}
+		{{> restaurantprofile}}
+	{{/if}}
 </div>
