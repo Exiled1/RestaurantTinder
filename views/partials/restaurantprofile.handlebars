@@ -1,4 +1,30 @@
-<!-- I'm not sure what the plan for this file is. The user clicks on a restaurant
-and then the two cards are replaced with this page? What information will we have
-on this page that won't be on the cards? -->
-Test
+<div id="modal-background" class="hidden">
+	<div id="modal-menu" class="hidden">
+		<button id="modal-close-button">x</button>
+		{{#if fields.name}}
+			<div id="modal-restaurant-title">{{restaurant.name}}</div>
+		{{/if}}
+		{{#if fields.rating}}
+			<div>Rating: {{restaurant.rating}}</div>
+		{{/if}}
+		{{#if fields.totalReviews}}
+			<div>Total Reviews: {{restaurant.user_ratings_total}}</div>
+		{{/if}}
+		{{#if fields.open }}
+		<div>Open: {{restaurant.opening_hours.open_now}}</div>
+		{{/if}}
+		{{#if fields.price}}
+			<div>Pricing: {{restaurant.price_level}}</div>
+		{{/if}}
+		{{#if fields.dineIn}}
+			<div>Dine in</div>
+		{{/if}}
+		{{#if fields.takeOut}}
+			<div>Take out</div>
+		{{/if}}
+
+	</div>
+	<div id="modal-matched-bar" class="hidden">
+		It's a Match!!
+	</div>
+</div>
