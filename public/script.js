@@ -23,7 +23,6 @@ function leftButtonClick() {
 	  });
 
 	postRequest.send();
-
 }
 
 function rightButtonClick() {

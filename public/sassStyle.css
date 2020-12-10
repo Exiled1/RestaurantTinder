@@ -46,6 +46,8 @@ body {
   background-color: #F79C81;
   height: 500px;
   width: 600px;
+  font-size: 30px;
+  padding: 20px;
 }
 
 #button-container {
