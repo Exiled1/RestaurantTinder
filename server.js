@@ -19,6 +19,8 @@ var port = 3000;
 app.engine('handlebars', exphbs({ defaultLayout: 'main' }));
 app.set('view engine', 'handlebars');
 
+app.use(express.json());
+
 //Simple get function using a predefined long and lat
 //Renders a page with a completely random restaurant
 app.get('/', async function (req, res) {
@@ -26,15 +28,12 @@ app.get('/', async function (req, res) {
 
     let places = await apiHelper.apiInit();
 
-    // console.log(places[1]);
-
     var rdmIdx = Math.floor(Math.random() * places.length);
 
     res.status(200).render('homepage', {
       restaurant: places[rdmIdx],
       fields: detectFields(places[rdmIdx])
     });
-    // res.status(200).render('homepage', places[rdmIdx]);
 });
 
 //Test function. Can be removed here soon
@@ -69,14 +68,25 @@ app.get('/test', async function (req, res) {
 //     });
 // });
 
-app.post('/getRestaurant', async function (req, res) {
-  let apiHelper = await createAPIHelper(latitudeLongitude, 3000);
+app.post('/getRestaurant', async function (req, res, next) {
+  if(!req.body.longLat)
+  {
+    res.status(400).send('Request body must contain longitude and latitude');
+  }
+
+  var longLat = req.body.longLat;
+
+  let apiHelper = await createAPIHelper(longLat, 3000);
 
   var places = apiHelper.apiDataObject;
 
   var rdmIdx = Math.floor(Math.random() * places.length);
 
-  res.status(200).render('homepage', {
+  console.log(places[rdmIdx]);
+
+  
+
+  res.status(200).send('homepage', {
     restaurant: places[rdmIdx],
     fields: detectFields(places[rdmIdx])
   });
