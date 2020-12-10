@@ -24,7 +24,7 @@ app.set('view engine', 'handlebars');
 app.get('/', async function (req, res) {
     let apiHelper = await createAPIHelper(latitudeLongitude, 3000);
 
-    let places = await apiHelper.apiInit();
+    let places = apiHelper.apiDataObject;
 
     // console.log(places[1]);
 
@@ -48,27 +48,6 @@ app.get('/test', async function (req, res) {
 });
 
 //Delete this here soon. Keep it now for testing. Should be gone by tomorrow morning
-
-//Post function called when the user wants more information about the restaurant
-// app.post('/rightRestaurant', async function (req, res) {
-//     let apiHelper = await createAPIHelper(latitudeLongitude, 3000); // creates an instance of the API Helper class.
-//
-//     let placesObj = apiHelper.apiDataObject; // this gets the places object.
-//
-//     res.status(200).render('homepage', { //This should at some point actually make it so that restrauntprofile.handlebars is displayed
-//         placesObj: placesObj //Modification probably needs to be in the homepage.handlebars file
-//     });
-// });
-//
-// app.post('/leftRestaurant', async function (req, res) {
-//     let apiHelper = await createAPIHelper(latitudeLongitude, 3000);
-//
-//     let placesObj = apiHelper.apiDataObject;
-//
-//     res.status(200).render('homepage', {
-//         placesObj: placesObj
-//     });
-// });
 
 app.post('/getRestaurant', async function (req, res) {
   let apiHelper = await createAPIHelper(latitudeLongitude, 3000);
