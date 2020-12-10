@@ -63,6 +63,7 @@ button {
   background-color: #223C78;
   color: #e87ea3;
   font-size: 50px;
+  cursor: pointer;
 }
 
 #modal-background {
@@ -100,6 +101,16 @@ button {
 
 #modal-restaurant-title {
   text-decoration: underline;
+}
+
+#modal-close-button {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  font-size: 50px;
+  border: none;
+  background: none;
+  cursor: pointer;
 }
 
 .hidden {
