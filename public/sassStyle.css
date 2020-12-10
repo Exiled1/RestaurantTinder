@@ -3,19 +3,20 @@
 body {
   margin: 0;
   border: 0;
-  font-family: "Philosopher", sans-serif;
-  color: #223C78;
-  background-color: #E9EBEf;
+  font-family: "Public Sans", sans-serif;
+  color: black;
+  background-color: #f2ede9;
 }
 
 #header-bar {
   height: 200px;
-  background-color: #e87ea3;
+  background-color: white;
   font-size: 100px;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+  border: 2px solid;
 }
 
 #header-bar-settings-icon {
@@ -62,8 +63,8 @@ button {
   height: 100px;
   border-radius: 50px;
   border: none;
-  background-color: #223C78;
-  color: #e87ea3;
+  background-color: black;
+  color: white;
   font-size: 50px;
   cursor: pointer;
 }
@@ -79,7 +80,7 @@ button {
 }
 
 #modal-menu {
-  background-color: #e87ea3;
+  background-color: white;
   width: 1000px;
   height: 600px;
   border-radius: 5px;
@@ -91,7 +92,7 @@ button {
 }
 
 #modal-matched-bar {
-  background-color: #E9EBEf;
+  background-color: #f2ede9;
   border-radius: 5px;
   font-size: 100px;
   width: 1000px;
