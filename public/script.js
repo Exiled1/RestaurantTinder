@@ -25,14 +25,18 @@ function leftButtonClick() {
 
 	navigator.geolocation.getCurrentPosition(positionRetrieved, positionError);
 	
+	var requestBody = JSON.stringify({
+		"longLat" : [latitude, longitude]
+	});
 
+	postRequest.setRequestHeader("Content-Type", "application/json");
 	postRequest.addEventListener('load', function (event) {
 		if (event.target.status !== 200) {
-		  alert("Error storing photo in database: " + event.target.response);
+		  alert("Could not load page: " + event.target.response);
 		}
 	  });
 
-	postRequest.send();
+	postRequest.send(requestBody);
 }
 
 function positionRetrieved(position) {
