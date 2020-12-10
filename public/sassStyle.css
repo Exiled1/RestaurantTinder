@@ -84,9 +84,11 @@ button {
   width: 1000px;
   height: 600px;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   border-radius: 5px;
+  font-size: 50px;
 }
 
 #modal-matched-bar {
