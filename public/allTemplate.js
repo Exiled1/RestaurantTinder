@@ -1,7 +1,7 @@
 (function() {
   var template = Handlebars.template, templates = Handlebars.templates = Handlebars.templates || {};
 templates['buttons'] = template({"compiler":[8,">= 4.3.0"],"main":function(container,depth0,helpers,partials,data) {
-    return "<div id=\"button-container\">\r\n	<button type=\"button\" id=\"left-button\">&lt-</button>\r\n	<button type=\"button\" id=\"right-button\">-&gt</i></button>\r\n</div>\r\n";
+    return "<div id=\"button-container\"> \r\n	<button type=\"button\" id=\"left-button\">&lt-</button>\r\n	<button type=\"button\" id=\"right-button\">-&gt</i></button>\r\n</div>\r\n";
 },"useData":true});
 templates['leftCard'] = template({"1":function(container,depth0,helpers,partials,data) {
     var stack1, lookupProperty = container.lookupProperty || function(parent, propertyName) {

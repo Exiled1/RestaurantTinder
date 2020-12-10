@@ -26,7 +26,7 @@ app.use(express.json());
 app.get('/', async function (req, res) {
     let apiHelper = await createAPIHelper(latitudeLongitude, 3000);
 
-    let places = await apiHelper.apiInit();
+    let places = apiHelper.apiDataObject;
 
     var rdmIdx = Math.floor(Math.random() * places.length);
 
@@ -39,10 +39,11 @@ app.get('/', async function (req, res) {
 //Test function. Can be removed here soon
 app.get('/test', async function (req, res) {
 
+
     let apiHelper = await createAPIHelper(latitudeLongitude, 3000);
     apiHelper.getRandomRestaurant();
 
-    res.status(200);
+    res.status(200).render("homepage");
 });
 
 //Delete this here soon. Keep it now for testing. Should be gone by tomorrow morning

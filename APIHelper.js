@@ -11,7 +11,6 @@
  * @param {Number} userRadius   - Takes a user radius, in meters. [optional].
  * @example
  * let apiHelper = await createAPIHelper(Latitude_Longitude, Radius_In_Meters);
-
  * @method **apiInit( )**, **getRandomRestaurant( )**
  * @author **Rudy P.**
  * @field **apiDataObject**
@@ -46,16 +45,16 @@ async function createAPIHelper(userLocation, userRadius) {
          */
         async apiInit() {
 
-            if (process.env.NODE_ENV !== 'production') {
-                // Checks the node environment, if it's not the production server, it won't require this configuration since we shouldn't be using a .env file in a production app, just during development.
-                require('dotenv').config();
-                // Don't remove this from here if you're deploying., this is required to make the API key work.
-            }
+		if (process.env.NODE_ENV !== 'production') {
+			// Checks the node environment, if it's not the production server, it won't require this configuration since we shouldn't be using a .env file in a production app, just during development.
+			require('dotenv').config();
+			// Don't remove this from here if you're deploying., this is required to make the API key work.
+		}
 
-            const {
-                Client,
-                defaultAxiosInstance
-            } = require("@googlemaps/google-maps-services-js"); // Initializing the client and an axios instance.
+		const {
+			Client,
+			defaultAxiosInstance
+		} = require("@googlemaps/google-maps-services-js"); // Initializing the client and an axios instance.
 
             const client = new Client({}); // Google API Client should be private per instance that I use it.
             // this.userLocation = [45.409274, -122.722615]
@@ -91,11 +90,11 @@ async function createAPIHelper(userLocation, userRadius) {
             console.log(this.apiDataObject);
         }
 
-        // End of class.
-    }
-    let apiHelper = new APIHelper(userLocation, userRadius);
-    await apiHelper.apiInit(); // initialize it.
-    return apiHelper; // return it.
+	// End of class.
+}
+let apiHelper = new APIHelper(userLocation, userRadius);
+await apiHelper.apiInit(); // initialize it.
+return apiHelper; // return it.
 }
 
 module.exports = createAPIHelper;
