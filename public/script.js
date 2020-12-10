@@ -66,6 +66,4 @@ function rightButtonClick() {
 
 function hideModal() {
 	document.getElementById("modal-background").classList.add("hidden");
-	document.getElementById("modal-menu").classList.add("hidden");
-	document.getElementById("modal-matched-bar").classList.add("hidden");
 }
