@@ -26,12 +26,15 @@ app.get('/', async function (req, res) {
 
     let places = await apiHelper.apiInit();
 
+    // console.log(places[1]);
+
     var rdmIdx = Math.floor(Math.random() * places.length);
 
     res.status(200).render('homepage', {
       restaurant: places[rdmIdx],
       fields: detectFields(places[rdmIdx])
     });
+    // res.status(200).render('homepage', places[rdmIdx]);
 });
 
 //Test function. Can be removed here soon
@@ -68,7 +71,16 @@ app.get('/test', async function (req, res) {
 // });
 
 app.post('/getRestaurant', async function (req, res) {
+  let apiHelper = await createAPIHelper(latitudeLongitude, 3000);
 
+  var places = apiHelper.apiDataObject;
+
+  var rdmIdx = Math.floor(Math.random() * places.length);
+
+  res.status(200).render('homepage', {
+    restaurant: places[rdmIdx],
+    fields: detectFields(places[rdmIdx])
+  });
 });
 
 app.use(express.static('public')); //Leave this here. I'm getting a 404 if it's any higher up
