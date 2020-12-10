@@ -13,7 +13,7 @@ document.getElementById("right-button").addEventListener("click", rightButtonCli
 
 function leftButtonClick() {
 	var postRequest = new XMLHttpRequest();
-	var reqURL = "/leftRestaurant";
+	var reqURL = "/getRestaurant";
 	postRequest.open("POST", reqURL);
 
 	postRequest.addEventListener('load', function (event) {
