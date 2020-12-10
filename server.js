@@ -56,13 +56,11 @@ app.post('/getRestaurant', async function (req, res, next) {
 
   var longLat = req.body.longLat;
 
-  let apiHelper = await createAPIHelper(longLat, 3000);
-
-  let places = await loadRestaurants(longLat, apiHelper, res);
+  let places = await loadRestaurants(longLat, res);
 
   var rdmIdx = Math.floor(Math.random() * places.length);
 
-  console.log(places[rdmIdx]);
+  // console.log(places[rdmIdx]);
 
   var data = {
     restaurant: places[rdmIdx],
@@ -127,9 +125,15 @@ function detectFields(restaurant)
   return fields;
 }
 
-async function loadRestaurants(longLat, apiHelper, res)
+async function loadRestaurants(longLat, res)
 {
   var pos = longLat[0] + "," + longLat[1];
+  // var pos = "145.409274,122.722615";
+  //
+  // longLat = [145.409274, 122.722615]
+
+  let apiHelper = await createAPIHelper(longLat, 3000);
+
   let places = await apiHelper.apiDataObject;
   // console.log('locData: ', locData);
   if(locData[pos])
@@ -139,9 +143,10 @@ async function loadRestaurants(longLat, apiHelper, res)
   }
   else
   {
-    locData.push({
-      [pos]: places
-    });
+    // locData.push({
+    //   [pos]: places
+    // });
+    locData[pos] = places;
 
     fs.writeFile(
       __dirname + '/locationData.json',
