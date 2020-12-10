@@ -125,7 +125,7 @@ templates['restaurantProfile'] = template({"1":function(container,depth0,helpers
     + ((stack1 = lookupProperty(helpers,"if").call(alias1,((stack1 = (depth0 != null ? lookupProperty(depth0,"fields") : depth0)) != null ? lookupProperty(stack1,"price") : stack1),{"name":"if","hash":{},"fn":container.program(9, data, 0),"inverse":container.noop,"data":data,"loc":{"start":{"line":16,"column":2},"end":{"line":18,"column":9}}})) != null ? stack1 : "")
     + ((stack1 = lookupProperty(helpers,"if").call(alias1,((stack1 = (depth0 != null ? lookupProperty(depth0,"fields") : depth0)) != null ? lookupProperty(stack1,"dineIn") : stack1),{"name":"if","hash":{},"fn":container.program(11, data, 0),"inverse":container.noop,"data":data,"loc":{"start":{"line":19,"column":2},"end":{"line":21,"column":9}}})) != null ? stack1 : "")
     + ((stack1 = lookupProperty(helpers,"if").call(alias1,((stack1 = (depth0 != null ? lookupProperty(depth0,"fields") : depth0)) != null ? lookupProperty(stack1,"takeOut") : stack1),{"name":"if","hash":{},"fn":container.program(13, data, 0),"inverse":container.noop,"data":data,"loc":{"start":{"line":22,"column":2},"end":{"line":24,"column":9}}})) != null ? stack1 : "")
-    + "\r\n	</div>\r\n	<div id=\"modal-matched-bar\" class=\"hidden\">\r\n		It's a Match!!\r\n	</div>\r\n</div>\r\n";
+    + "		\r\n	</div>\r\n	<div id=\"modal-matched-bar\" class=\"hidden\">\r\n		It's a Match!!\r\n	</div>\r\n</div>";
 },"useData":true});
 templates['rightCard'] = template({"1":function(container,depth0,helpers,partials,data) {
     var stack1, lookupProperty = container.lookupProperty || function(parent, propertyName) {
