@@ -1,0 +1,66 @@
+/*	TODO change this to dani's font	*/
+/*	Colors	*/
+body {
+  margin: 0;
+  border: 0;
+  font-family: "Philosopher", sans-serif;
+  color: #223C78;
+  background-color: #E9EBEf;
+}
+
+#header-bar {
+  height: 200px;
+  background-color: #e87ea3;
+  font-size: 100px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#header-bar-settings-icon {
+  margin: 50px;
+  height: 100px;
+  width: auto;
+}
+
+#header-space-holder {
+  margin: 50px;
+  height: 100px;
+  width: 100px;
+}
+
+#header-bar-text {
+  text-decoration: none;
+}
+
+#card-content-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+}
+
+.card-container {
+  margin: 50px;
+  background-color: #F79C81;
+  height: 500px;
+  width: 250px;
+}
+
+#button-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-content: center;
+}
+
+button {
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+  border: none;
+  background-color: #223C78;
+  color: #e87ea3;
+  font-size: 50px;
+}
