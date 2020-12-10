@@ -16,13 +16,18 @@ function leftButtonClick() {
 	var reqURL = "/getRestaurant";
 	postRequest.open("POST", reqURL);
 
+  var reqBody = JSON.stringify({
+      longLat: [45.409274, -122.722615]
+    });
+
+  postRequest.setRequestHeader('Content-Type', 'application/json');
 	postRequest.addEventListener('load', function (event) {
 		if (event.target.status !== 200) {
 		  alert("Error storing photo in database: " + event.target.response);
 		}
 	  });
 
-	postRequest.send();
+	postRequest.send(reqBody);
 }
 
 function rightButtonClick() {
