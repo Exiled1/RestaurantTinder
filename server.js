@@ -30,7 +30,7 @@ app.get('/', async function (req, res) {
 
     res.status(200).render('homepage', {
       restaurant: places[rdmIdx],
-      fields: detectFields(places[rdmIdx]);
+      fields: detectFields(places[rdmIdx])
     });
 });
 
