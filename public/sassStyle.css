@@ -73,31 +73,35 @@ button {
   right: 0;
   z-index: 1000;
   background-color: rgba(0, 0, 0, 0.85);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
 }
 
 #modal-menu {
   background-color: #e87ea3;
   width: 1000px;
   height: 600px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   border-radius: 5px;
   font-size: 50px;
+  margin: 40px auto;
+  margin-bottom: 0;
+  text-align: center;
+  vertical-align: middle;
 }
 
 #modal-matched-bar {
   background-color: #E9EBEf;
+  border-radius: 5px;
   font-size: 100px;
   width: 1000px;
   justify-content: center;
-  display: flex;
-  align-items: center;
-  border-radius: 5px;
-  padding: 20px;
+  margin: auto;
+  text-align: center;
+  padding: 40px;
+}
+
+#modal-restaurant-title {
+  text-decoration: underline;
+}
+
+.hidden {
+  display: none;
 }
