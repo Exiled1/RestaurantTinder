@@ -58,7 +58,9 @@ app.post('/getRestaurant', async function (req, res, next) {
 
   let apiHelper = await createAPIHelper(longLat, 3000);
 
-  var places = loadRestaurants(longLat, apiHelper);
+  let places = await loadRestaurants(longLat, apiHelper, res);
+
+  var rdmIdx = Math.floor(Math.random() * places.length);
 
   console.log(places[rdmIdx]);
 
@@ -67,7 +69,7 @@ app.post('/getRestaurant', async function (req, res, next) {
     fields: detectFields(places[rdmIdx])
   };
 
-  res.status(200).send(data);
+  res.status(200).send(JSON.stringify(data, null, 2));
 });
 
 app.use(express.static('public')); //Leave this here. I'm getting a 404 if it's any higher up
@@ -125,15 +127,22 @@ function detectFields(restaurant)
   return fields;
 }
 
-function loadRestaurants(longLat, apiHelper)
+async function loadRestaurants(longLat, apiHelper, res)
 {
-  if(locData[longLat[0]][longLat[1]])
+  var pos = longLat[0] + "," + longLat[1];
+  let places = await apiHelper.apiDataObject;
+  // console.log('locData: ', locData);
+  if(locData[pos])
   {
-    var places = locData[longLat[0]][longLat[1]];
+    console.log("This location already exists");
+    places = locData[pos];
   }
   else
   {
-    var places = apiHelper.apiDataObject;
+    locData.push({
+      [pos]: places
+    });
+
     fs.writeFile(
       __dirname + '/locationData.json',
       JSON.stringify(locData, null, 2),
@@ -141,17 +150,14 @@ function loadRestaurants(longLat, apiHelper)
         if(err)
         {
           console.log("  -- err:", err);
-          res.status(500).send("Error saving location to DB");
+          console.log("Error saving location to DB");
         }
         else
         {
-          res.status(200).send("Location saved to DB");
+          console.log("Location saved to DB");
         }
       }
     )
   }
-
-  var rdmIdx = Math.floor(Math.random() * places.length);
-
-  return places[rdmIdx];
+  return places;
 }

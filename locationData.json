@@ -1,0 +1,1048 @@
+{
+  "45.409274,-122.722615": [
+    {
+      "business_status": "CLOSED_TEMPORARILY",
+      "geometry": {
+        "location": {
+          "lat": 45.411469,
+          "lng": -122.74504
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 45.4127781302915,
+            "lng": -122.7436749697085
+          },
+          "southwest": {
+            "lat": 45.4100801697085,
+            "lng": -122.7463729302915
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+      "name": "Sweet Tomatoes",
+      "permanently_closed": true,
+      "photos": [
+        {
+          "height": 768,
+          "html_attributions": [
+            "From a Google User"
+          ],
+          "photo_reference": "ATtYBwKxJjmSuLudw2Keo8mxIyrcr3rnRJ-KksRMwqsvZRTxe_0nSUiSRfqjyIS2zrc0vBWVI9aihcNVMc58lkDVXS8UmABdxAJhywb4sulnj3xHvKlX-ET_YHkXjeXdlzaDlzr_h7k-N4gjlgM3Ho1y6K7kvf_VBdr-Q8BH7PwwWM0nkZht",
+          "width": 1024
+        }
+      ],
+      "place_id": "ChIJ2yxt-ddylVQRhHgiej25jzM",
+      "plus_code": {
+        "compound_code": "C763+HX Tigard, OR, USA",
+        "global_code": "84QVC763+HX"
+      },
+      "price_level": 1,
+      "rating": 4.3,
+      "reference": "ChIJ2yxt-ddylVQRhHgiej25jzM",
+      "scope": "GOOGLE",
+      "types": [
+        "meal_takeaway",
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "user_ratings_total": 1025,
+      "vicinity": "6600 Southwest Cardinal Lane, Tigard"
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "geometry": {
+        "location": {
+          "lat": 45.4074478,
+          "lng": -122.7234538
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 45.40884193029149,
+            "lng": -122.7221296697085
+          },
+          "southwest": {
+            "lat": 45.4061439697085,
+            "lng": -122.7248276302915
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+      "name": "La Provence Boulangerie & Patisserie",
+      "opening_hours": {
+        "open_now": true
+      },
+      "photos": [
+        {
+          "height": 827,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/109993862912725527084\">La Provence Boulangerie &amp; Patisserie</a>"
+          ],
+          "photo_reference": "ATtYBwKset0Vny1Q0_GdS03sphdHrtKleWcmGmz_Z3eJvsCcWfIewPqonbXGxzojyYe9uytsXg-LKTMyfOOZ3rRno8ypBk2WQpkTk1IHL2yDE7svtmcVOx39k_oRcOZXDn0_4D2iLvmg8XpZjb3fYVTxVkfex1niyO8a_0HPo76ZhBOKs2cT",
+          "width": 827
+        }
+      ],
+      "place_id": "ChIJtY_ymiJzlVQRD_2Vqzhe3gY",
+      "plus_code": {
+        "compound_code": "C74G+XJ Lake Oswego, OR, USA",
+        "global_code": "84QVC74G+XJ"
+      },
+      "price_level": 2,
+      "rating": 4.5,
+      "reference": "ChIJtY_ymiJzlVQRD_2Vqzhe3gY",
+      "scope": "GOOGLE",
+      "types": [
+        "bakery",
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "user_ratings_total": 1508,
+      "vicinity": "16350 Boones Ferry Road, Lake Oswego"
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "geometry": {
+        "location": {
+          "lat": 45.3942376,
+          "lng": -122.7538166
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 45.3956621302915,
+            "lng": -122.7525536197085
+          },
+          "southwest": {
+            "lat": 45.3929641697085,
+            "lng": -122.7552515802915
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/shopping-71.png",
+      "name": "Bridgeport Village",
+      "opening_hours": {
+        "open_now": true
+      },
+      "photos": [
+        {
+          "height": 2833,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/110519811989010171637\">Bridgeport Village</a>"
+          ],
+          "photo_reference": "ATtYBwKYBCsj8GTkYV2Sc467G5cqjiJbf3sm4YMP4Y4tYbUO3q_nPVkJau7OHIEop8n3TfVwoqxiHqIVfBv7ehyhWQNacUyidKob6n7NW0SbQr49oFdtx1hWUhBI1_lR2_RrUnfGUjoK9PSLEhqQIJacMOMzVHBPNRa-GxvU7sEpEn-2snIH",
+          "width": 4250
+        }
+      ],
+      "place_id": "ChIJnYnrbetylVQROv3TC5iu6SI",
+      "plus_code": {
+        "compound_code": "96VW+MF Tigard, OR, USA",
+        "global_code": "84QV96VW+MF"
+      },
+      "rating": 4.4,
+      "reference": "ChIJnYnrbetylVQROv3TC5iu6SI",
+      "scope": "GOOGLE",
+      "types": [
+        "shopping_mall",
+        "movie_theater",
+        "cafe",
+        "spa",
+        "restaurant",
+        "food",
+        "gym",
+        "health",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "user_ratings_total": 3595,
+      "vicinity": "7455 Southwest Bridgeport Road, Tigard"
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "geometry": {
+        "location": {
+          "lat": 45.4191297,
+          "lng": -122.7398262
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 45.4205228802915,
+            "lng": -122.7386263697085
+          },
+          "southwest": {
+            "lat": 45.4178249197085,
+            "lng": -122.7413243302915
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+      "name": "The Original Stanford's Restaurant & Bar",
+      "opening_hours": {
+        "open_now": true
+      },
+      "photos": [
+        {
+          "height": 3024,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/111401864194335828176\">John Carter</a>"
+          ],
+          "photo_reference": "ATtYBwIlnES05TY5q2_2UtwvnCO7jI1vCBozDWjDXgVaa7F6n9MtAUtXlFSe_HwoMv8_21yiRHKuvzh-BKTdzTYlZ1Y3lUXaKo2oyl7O4JUaqrz3Eyfs4NMuyzMzDAk046PsDQWwgqdf9iRnEHlvrgVmT0NtlE5il7eN1qAolxhXtz1hyb41",
+          "width": 4032
+        }
+      ],
+      "place_id": "ChIJfaZzxy1zlVQRdGhs85IKqso",
+      "plus_code": {
+        "compound_code": "C796+M3 Lake Oswego, OR, USA",
+        "global_code": "84QVC796+M3"
+      },
+      "price_level": 2,
+      "rating": 4.2,
+      "reference": "ChIJfaZzxy1zlVQRdGhs85IKqso",
+      "scope": "GOOGLE",
+      "types": [
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "user_ratings_total": 779,
+      "vicinity": "14801 Kruse Oaks, Boulevard, Lake Oswego"
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "geometry": {
+        "location": {
+          "lat": 45.414509,
+          "lng": -122.7466479
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 45.4158135302915,
+            "lng": -122.7453391697085
+          },
+          "southwest": {
+            "lat": 45.4131155697085,
+            "lng": -122.7480371302915
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+      "name": "McMenamins John Barleycorns",
+      "opening_hours": {
+        "open_now": true
+      },
+      "photos": [
+        {
+          "height": 3088,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/101166704575938805945\">Salman Akhtar</a>"
+          ],
+          "photo_reference": "ATtYBwIfMtXGvLxGP_VGJrdo0DCBTI9yT94E2NfexpTcuoC1nRso470CHt9s8jONCPcJ4Wm84xdqmgF5LTLKTZox5_Qa8pZ-riO4Qsc75CK1Y9oyiaoGfFQAGjDyk2Q0ZwnoQUEruuGdI53zqtA1JbN9Hk8fiF1-vrkxiX6kOHFQYrCFRHH6",
+          "width": 4160
+        }
+      ],
+      "place_id": "ChIJNSQGxClzlVQRpIk1AZA59QU",
+      "plus_code": {
+        "compound_code": "C773+R8 Tigard, OR, USA",
+        "global_code": "84QVC773+R8"
+      },
+      "price_level": 2,
+      "rating": 4.3,
+      "reference": "ChIJNSQGxClzlVQRpIk1AZA59QU",
+      "scope": "GOOGLE",
+      "types": [
+        "bar",
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "user_ratings_total": 1459,
+      "vicinity": "14610 Southwest Sequoia Parkway, Tigard"
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "geometry": {
+        "location": {
+          "lat": 45.4046455,
+          "lng": -122.7230274
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 45.4059212802915,
+            "lng": -122.7216313697085
+          },
+          "southwest": {
+            "lat": 45.4032233197085,
+            "lng": -122.7243293302915
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+      "name": "Deno's Pizzeria",
+      "opening_hours": {
+        "open_now": true
+      },
+      "photos": [
+        {
+          "height": 2448,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/101989872870645747099\">B E S</a>"
+          ],
+          "photo_reference": "ATtYBwLopvOjRrNVXXbyM1pFS0CT7T3tOS_CLIChpUU3xo3W41laQmo8MCjUSAIMm6qCGqWiGSAo8ICGy4VDJl_LaM3crIZ5eOUL5Ex0H8_L_kjyHJ6hzSic3V5RQzJLOf2_xuyJyAyzLPMvb3hoboPpirdJN55ZQ66alYiXB9aMwDxXkdOH",
+          "width": 3264
+        }
+      ],
+      "place_id": "ChIJpdZ7ERlzlVQR4ge2HkHApJQ",
+      "plus_code": {
+        "compound_code": "C73G+VQ Lake Oswego, OR, USA",
+        "global_code": "84QVC73G+VQ"
+      },
+      "price_level": 2,
+      "rating": 4.2,
+      "reference": "ChIJpdZ7ERlzlVQR4ge2HkHApJQ",
+      "scope": "GOOGLE",
+      "types": [
+        "meal_delivery",
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "user_ratings_total": 107,
+      "vicinity": "4475 Lakeview Boulevard, Lake Oswego"
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "geometry": {
+        "location": {
+          "lat": 45.3973269,
+          "lng": -122.7498215
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 45.3987580802915,
+            "lng": -122.7485588697085
+          },
+          "southwest": {
+            "lat": 45.3960601197085,
+            "lng": -122.7512568302915
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+      "name": "McCormick & Schmick's Grill",
+      "opening_hours": {
+        "open_now": true
+      },
+      "photos": [
+        {
+          "height": 1266,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/110665199893425785031\">McCormick &amp; Schmick&#39;s Grill</a>"
+          ],
+          "photo_reference": "ATtYBwJIDCOliNDjmmx-0JzZmLYwylFvQIzS9Vvj_52XqqxGcL_Dwek61mFUbxkA9pnkkllppkocMuzZoahmjpiQXxvRl6nGs3i1mXYiHhC_xvc12y1COtEwH_6sRxvOljg-bhkvhIL8gAX3fRdl7tIVoXj02--skNYCVRamWmqxlKNT449t",
+          "width": 1900
+        }
+      ],
+      "place_id": "ChIJI2Xor-lylVQRDHEJVCFGwQU",
+      "plus_code": {
+        "compound_code": "97W2+W3 Tigard, OR, USA",
+        "global_code": "84QV97W2+W3"
+      },
+      "price_level": 3,
+      "rating": 4.2,
+      "reference": "ChIJI2Xor-lylVQRDHEJVCFGwQU",
+      "scope": "GOOGLE",
+      "types": [
+        "restaurant",
+        "meal_takeaway",
+        "bar",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "user_ratings_total": 614,
+      "vicinity": "17015 Southwest 72nd Avenue, Tigard"
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "geometry": {
+        "location": {
+          "lat": 45.4202156,
+          "lng": -122.7403488
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 45.4216825302915,
+            "lng": -122.7388827697085
+          },
+          "southwest": {
+            "lat": 45.4189845697085,
+            "lng": -122.7415807302915
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+      "name": "Oswego Grill- Lake Oswego",
+      "opening_hours": {
+        "open_now": true
+      },
+      "photos": [
+        {
+          "height": 2160,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/117597871207501336675\">Kiarash Torkian</a>"
+          ],
+          "photo_reference": "ATtYBwIJ5w8jWznKiU0cvbVHZdhlwIqzO3wK-nyTJSUPvOLWo0ONw1pzKC2pPRFhbXTh9w1VfPGvFiuBdpW_XA0QDegBgth5pThErr9nvQW860evrIC3-u6HJSRDsYOQAo1i_rr6FAlw4x7IKrcqyd4Pp7YYJ12fG8BXlr_EOnz8CUmHx03P",
+          "width": 3840
+        }
+      ],
+      "place_id": "ChIJCVF5oS1zlVQRhUHY0xX8BSY",
+      "plus_code": {
+        "compound_code": "C7C5+3V Lake Oswego, OR, USA",
+        "global_code": "84QVC7C5+3V"
+      },
+      "price_level": 2,
+      "rating": 4.5,
+      "reference": "ChIJCVF5oS1zlVQRhUHY0xX8BSY",
+      "scope": "GOOGLE",
+      "types": [
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "user_ratings_total": 1776,
+      "vicinity": "7 Centerpointe Drive, Lake Oswego"
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "geometry": {
+        "location": {
+          "lat": 45.419897,
+          "lng": -122.739438
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 45.4212595802915,
+            "lng": -122.7381787197085
+          },
+          "southwest": {
+            "lat": 45.41856161970851,
+            "lng": -122.7408766802915
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/cafe-71.png",
+      "name": "Starbucks",
+      "opening_hours": {
+        "open_now": true
+      },
+      "photos": [
+        {
+          "height": 3024,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/106274819900606289294\">Willis Anderson</a>"
+          ],
+          "photo_reference": "ATtYBwI4BaZTaJydftxGUjCCFD1Mm5i9TA-aWs8G-SZvudzgD5XLC0QO9tY08lhha081G0s_1868n5zIfyH3jS4jhgYoR4lUEgiWS49tXb4MyQsg8eCxf62MoeNK1BVVaquZjcw_tcw5WpaokKfG3Vi8HqitRIWRuO4s3IsRTD-nuBu-TOtt",
+          "width": 4032
+        }
+      ],
+      "place_id": "ChIJhYBavC1zlVQRRuka6A7u1Tw",
+      "plus_code": {
+        "compound_code": "C796+X6 Lake Oswego, OR, USA",
+        "global_code": "84QVC796+X6"
+      },
+      "price_level": 2,
+      "rating": 4.2,
+      "reference": "ChIJhYBavC1zlVQRRuka6A7u1Tw",
+      "scope": "GOOGLE",
+      "types": [
+        "cafe",
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "user_ratings_total": 245,
+      "vicinity": "8 Centerpointe Drive, Lake Oswego"
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "geometry": {
+        "location": {
+          "lat": 45.40439789999999,
+          "lng": -122.7497614
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 45.4057994802915,
+            "lng": -122.7483448197085
+          },
+          "southwest": {
+            "lat": 45.4031015197085,
+            "lng": -122.7510427802915
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+      "name": "Subway",
+      "opening_hours": {
+        "open_now": true
+      },
+      "photos": [
+        {
+          "height": 1080,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/103289044753827306772\">Fiona Ryan</a>"
+          ],
+          "photo_reference": "ATtYBwJksnKna5fI_mr20r67xNP3vrfBtoFnG_i6rUJ69Zo99UEI_c_V4tsTq2joEC0MtXCRWkPtU6E_MYuVCEBbfx7KP_w5u_dXVM7iU4NfBsmzmR0-IUvfYSjO5WNJkSbAyLrPE_UmmVdI1HW4XIa37zUiboz6nVvvdEr442Bbk9Wl9EWR",
+          "width": 1920
+        }
+      ],
+      "place_id": "ChIJMa3WhNtylVQRTOqbezA7C5Q",
+      "plus_code": {
+        "compound_code": "C732+Q3 Tigard, OR, USA",
+        "global_code": "84QVC732+Q3"
+      },
+      "price_level": 1,
+      "rating": 3.8,
+      "reference": "ChIJMa3WhNtylVQRTOqbezA7C5Q",
+      "scope": "GOOGLE",
+      "types": [
+        "meal_takeaway",
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "user_ratings_total": 32,
+      "vicinity": "15983 Southwest 72nd Avenue Building A, Tigard"
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "geometry": {
+        "location": {
+          "lat": 45.39191,
+          "lng": -122.74988
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 45.3931846802915,
+            "lng": -122.7486604697085
+          },
+          "southwest": {
+            "lat": 45.3904867197085,
+            "lng": -122.7513584302915
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+      "name": "Claim Jumper Restaurants",
+      "opening_hours": {
+        "open_now": true
+      },
+      "photos": [
+        {
+          "height": 1080,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/100997933010255474675\">Ed Warren</a>"
+          ],
+          "photo_reference": "ATtYBwIiQmM58sEG6SoMI3UiD8uCUm8sFVLIDH1qG6iUOa2I7NGx7UcCrQyKnTMyqInmfdJQpjRhjaejOxaNxJuZQgKGQOGMZl9O4Jx8s7PiPsgOwQR5jF1yPzBW0lmEVpEA7MgwHEcFgXu8E3IEhd2vvzXbWxGASgDWcM4IYaMikAHpZpTI",
+          "width": 1920
+        }
+      ],
+      "place_id": "ChIJW5RpW-xylVQR7rQLnQYW4aE",
+      "plus_code": {
+        "compound_code": "97R2+Q2 Portland, OR, USA",
+        "global_code": "84QV97R2+Q2"
+      },
+      "price_level": 2,
+      "rating": 4.1,
+      "reference": "ChIJW5RpW-xylVQR7rQLnQYW4aE",
+      "scope": "GOOGLE",
+      "types": [
+        "bar",
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "user_ratings_total": 1907,
+      "vicinity": "18000 Southwest Lower Boones Ferry Road, Portland"
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "geometry": {
+        "location": {
+          "lat": 45.3953183,
+          "lng": -122.7461746
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 45.39663923029149,
+            "lng": -122.7447463697085
+          },
+          "southwest": {
+            "lat": 45.39394126970849,
+            "lng": -122.7474443302915
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png",
+      "name": "Stars Cabaret Bridgeport",
+      "opening_hours": {
+        "open_now": true
+      },
+      "photos": [
+        {
+          "height": 926,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/104649143521841034847\">PRINCE FRANCIS TJ</a>"
+          ],
+          "photo_reference": "ATtYBwIo-MgkGYOWPc0a7R5077XnggnAIX8KxBrmb3biy5ANgcYv5q-GzC4k9a24adWn6PY8Klw049BvpQD83iiCguTWzZY1aMBjoWG751aXzmyv2SB_mwQIaZhozFslAROqziIzhbWkdoY2seNbYVYuodaPCg5pOGl3t4jgtEYpT_7_ThEg",
+          "width": 720
+        }
+      ],
+      "place_id": "ChIJRdJjKulylVQRXViTHNm0qjM",
+      "plus_code": {
+        "compound_code": "97W3+4G Portland, OR, USA",
+        "global_code": "84QV97W3+4G"
+      },
+      "rating": 3.3,
+      "reference": "ChIJRdJjKulylVQRXViTHNm0qjM",
+      "scope": "GOOGLE",
+      "types": [
+        "night_club",
+        "bar",
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "user_ratings_total": 99,
+      "vicinity": "17939 Southwest McEwan Road, Portland"
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "geometry": {
+        "location": {
+          "lat": 45.4098625,
+          "lng": -122.720047
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 45.4111934802915,
+            "lng": -122.7187425697085
+          },
+          "southwest": {
+            "lat": 45.4084955197085,
+            "lng": -122.7214405302915
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+      "name": "Babica Hen Cafe",
+      "opening_hours": {
+        "open_now": true
+      },
+      "photos": [
+        {
+          "height": 1242,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/101845231981176531643\">Babica Hen Cafe</a>"
+          ],
+          "photo_reference": "ATtYBwIivehK0d-5piTyRqdPVo4eAjefFLYDgURzoGl87rt6wCuhxjOayJtgZ2gQZM_5tdO55ApSxZkLcUx_Xprnno7XuA6hVij7EEIAyy3sa089HF4E5xC2Uy1jsxudIv93ASMRYUpndDG9b09HgB0sjhrOKbFTvDVQ_pgCBbSQWyHR1J07",
+          "width": 2048
+        }
+      ],
+      "place_id": "ChIJayTycz1zlVQRvgE6jK0sz5k",
+      "plus_code": {
+        "compound_code": "C75H+WX Lake Oswego, OR, USA",
+        "global_code": "84QVC75H+WX"
+      },
+      "price_level": 2,
+      "rating": 4.4,
+      "reference": "ChIJayTycz1zlVQRvgE6jK0sz5k",
+      "scope": "GOOGLE",
+      "types": [
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "user_ratings_total": 849,
+      "vicinity": "15964 Boones Ferry Road, Lake Oswego"
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "geometry": {
+        "location": {
+          "lat": 45.4180944,
+          "lng": -122.7421657
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 45.4194338302915,
+            "lng": -122.7410885697085
+          },
+          "southwest": {
+            "lat": 45.4167358697085,
+            "lng": -122.7437865302915
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+      "name": "Olive Garden Italian Restaurant",
+      "opening_hours": {
+        "open_now": true
+      },
+      "photos": [
+        {
+          "height": 3024,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/107925174277156677204\">Xuancheng Liu</a>"
+          ],
+          "photo_reference": "ATtYBwKfPljpzAvu1XhumjcGFaMnN3CpXMBddQvd93J-WDuzn3sGj1K-azVMqVXX5w8YFs3JJ0VkKLdWWr5ykjXwD1x-LBfDahStoVdrlxgl6qPmqs7gOWRtSaHec25t-JWvVcl3UZlk1Z7RxkbJ4ASsAQCyxNgETRRwYqo2IxokB-H0LFK-",
+          "width": 4032
+        }
+      ],
+      "place_id": "ChIJha-iGixzlVQRr1oArp8906c",
+      "plus_code": {
+        "compound_code": "C795+64 Lake Oswego, OR, USA",
+        "global_code": "84QVC795+64"
+      },
+      "price_level": 2,
+      "rating": 4.2,
+      "reference": "ChIJha-iGixzlVQRr1oArp8906c",
+      "scope": "GOOGLE",
+      "types": [
+        "meal_takeaway",
+        "bar",
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "user_ratings_total": 1702,
+      "vicinity": "6355 Meadows Road, Lake Oswego"
+    },
+    {
+      "business_status": "CLOSED_TEMPORARILY",
+      "geometry": {
+        "location": {
+          "lat": 45.39548060000001,
+          "lng": -122.7428167
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 45.3968805802915,
+            "lng": -122.7416242197085
+          },
+          "southwest": {
+            "lat": 45.3941826197085,
+            "lng": -122.7443221802915
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+      "name": "Nicoli's Grill & Sports Bar",
+      "permanently_closed": true,
+      "photos": [
+        {
+          "height": 2988,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/102812676779606700479\">Jason Lee</a>"
+          ],
+          "photo_reference": "ATtYBwL5evIZDzgHaeBajBQ2iKaOb6_B3GUtFRvQFJJ0-wbtgBxK1P1Ai0-Jiv9xIDJHhSBYJaYVCvZGW5_OSpTBAPQJ2NYkAApLFV-aSqO9cDAO1k7mWZfU_ckHC56XNUSIDXtWJGnR4DxHpWiygvXCuTBhg1KjiDNNL7DM4SJFcJViR1RJ",
+          "width": 3984
+        }
+      ],
+      "place_id": "ChIJ26DEVO9ylVQR1hGZlaHDLyo",
+      "plus_code": {
+        "compound_code": "97W4+5V Lake Oswego, OR, USA",
+        "global_code": "84QV97W4+5V"
+      },
+      "price_level": 2,
+      "rating": 4,
+      "reference": "ChIJ26DEVO9ylVQR1hGZlaHDLyo",
+      "scope": "GOOGLE",
+      "types": [
+        "bowling_alley",
+        "bar",
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "user_ratings_total": 533,
+      "vicinity": "17880 Southwest McEwan Road, Lake Oswego"
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "geometry": {
+        "location": {
+          "lat": 45.3969163,
+          "lng": -122.7512105
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 45.3983052802915,
+            "lng": -122.7498129697085
+          },
+          "southwest": {
+            "lat": 45.3956073197085,
+            "lng": -122.7525109302915
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+      "name": "Pastini",
+      "opening_hours": {
+        "open_now": true
+      },
+      "photos": [
+        {
+          "height": 1904,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/117943884326441092394\">Pastini</a>"
+          ],
+          "photo_reference": "ATtYBwJGtjNqVqxx0i8f55-02mjHNCvu42C6-l-4bIRg_uHJ3G-lWW-B1Pz_oLZ9V8ZdFfMeXex8QydbAQQ9fGoMSU11m828lzuW8y6PaQq01_pCtgX5TVRE3HAzltghx5wnE2O13uY7DwdGdUD5hQVbIlABov4H4Te8iMpVyy7U4QrvYq3p",
+          "width": 2846
+        }
+      ],
+      "place_id": "ChIJ65Ce2etylVQRHNV4BCIwzsA",
+      "plus_code": {
+        "compound_code": "96WX+QG Tigard, OR, USA",
+        "global_code": "84QV96WX+QG"
+      },
+      "price_level": 2,
+      "rating": 4.4,
+      "reference": "ChIJ65Ce2etylVQRHNV4BCIwzsA",
+      "scope": "GOOGLE",
+      "types": [
+        "meal_takeaway",
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "user_ratings_total": 590,
+      "vicinity": "7307 Southwest Bridgeport Road B-105, Tigard"
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "geometry": {
+        "location": {
+          "lat": 45.41741799999999,
+          "lng": -122.738104
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 45.4188381302915,
+            "lng": -122.7366782197085
+          },
+          "southwest": {
+            "lat": 45.4161401697085,
+            "lng": -122.7393761802915
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/cafe-71.png",
+      "name": "Starbucks",
+      "opening_hours": {
+        "open_now": true
+      },
+      "photos": [
+        {
+          "height": 3024,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/113660871396728099494\">A A</a>"
+          ],
+          "photo_reference": "ATtYBwKRO17dI4iNiz2Mmn_Mw2_BG4i_mlOuporFrJI5pPhPdwsrjka0AzhcPZDCmXHrhVbWsxQEJtObQp6xHiYIU2efxDSRr-N1sMw0VwDSZ-rVwzI3sHe4UHQsFLhsKbDRLBzGwf_wa-x4_Z82cuRMYr2Tj-lc-PVoh94PWmYFfTG8x2QM",
+          "width": 4032
+        }
+      ],
+      "place_id": "ChIJw6mJYC5zlVQR8ufOUlliq4U",
+      "plus_code": {
+        "compound_code": "C786+XQ Lake Oswego, OR, USA",
+        "global_code": "84QVC786+XQ"
+      },
+      "price_level": 2,
+      "rating": 4.3,
+      "reference": "ChIJw6mJYC5zlVQR8ufOUlliq4U",
+      "scope": "GOOGLE",
+      "types": [
+        "cafe",
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "user_ratings_total": 111,
+      "vicinity": "5800 Meadows Road Suite 190, Lake Oswego"
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "geometry": {
+        "location": {
+          "lat": 45.409641,
+          "lng": -122.7201722
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 45.41109548029149,
+            "lng": -122.7189157197085
+          },
+          "southwest": {
+            "lat": 45.40839751970849,
+            "lng": -122.7216136802915
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+      "name": "Gubanc's Restaurant",
+      "opening_hours": {
+        "open_now": false
+      },
+      "photos": [
+        {
+          "height": 1367,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/108092058898037858441\">Gubanc&#39;s Restaurant</a>"
+          ],
+          "photo_reference": "ATtYBwJpgn1a2U3L3CxqUJJaEukXunSD8OEnsj2gjNZ_xVTXqsDbH63yOZM9bxHhz4jQgUQM_pdet9csl8Jftmh9LgbomBIfhgXikmqDVM594Wvk6VDuBhaRwteIsMdqqwzd_X0JcarP23DIjLx0YHVEe_cVCNBqxqo-K_i6PGlVrfh3fH98",
+          "width": 2048
+        }
+      ],
+      "place_id": "ChIJ9_HZbz1zlVQR3lCyBkYasyI",
+      "plus_code": {
+        "compound_code": "C75H+VW Lake Oswego, OR, USA",
+        "global_code": "84QVC75H+VW"
+      },
+      "price_level": 2,
+      "rating": 4.4,
+      "reference": "ChIJ9_HZbz1zlVQR3lCyBkYasyI",
+      "scope": "GOOGLE",
+      "types": [
+        "bar",
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "user_ratings_total": 302,
+      "vicinity": "16008 Boones Ferry Road, Lake Oswego"
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "geometry": {
+        "location": {
+          "lat": 45.3971372,
+          "lng": -122.7514285
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 45.3985421802915,
+            "lng": -122.7498406197085
+          },
+          "southwest": {
+            "lat": 45.3958442197085,
+            "lng": -122.7525385802915
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+      "name": "California Pizza Kitchen at Bridgeport",
+      "opening_hours": {
+        "open_now": true
+      },
+      "photos": [
+        {
+          "height": 3024,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/106274819900606289294\">Willis Anderson</a>"
+          ],
+          "photo_reference": "ATtYBwIcln0KgVMqnHmfg4Xmz_t2ug7p-DlwHmeJLVHU0giMCK8snp65V5Ad3W-rHrDfipPeFC2-CAOEz6iowO47buB3feYQhe61z76pfLiyMMM-8W1lO8s4MBUdSzocIhQc6L0oNOIeoU7189JRcDEoVUeOAVxR1q3-pslV44giYjRtzFKP",
+          "width": 4032
+        }
+      ],
+      "place_id": "ChIJia4H2-tylVQRfTFFKMsgbjU",
+      "plus_code": {
+        "compound_code": "96WX+VC Tigard, OR, USA",
+        "global_code": "84QV96WX+VC"
+      },
+      "price_level": 2,
+      "rating": 4.2,
+      "reference": "ChIJia4H2-tylVQRfTFFKMsgbjU",
+      "scope": "GOOGLE",
+      "types": [
+        "bar",
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "user_ratings_total": 555,
+      "vicinity": "7315 Southwest Bridgeport Road Blg. R2, Tigard"
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "geometry": {
+        "location": {
+          "lat": 45.3956898,
+          "lng": -122.752428
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 45.3971479302915,
+            "lng": -122.7509947697085
+          },
+          "southwest": {
+            "lat": 45.3944499697085,
+            "lng": -122.7536927302915
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+      "name": "P.F. Chang's",
+      "opening_hours": {
+        "open_now": true
+      },
+      "photos": [
+        {
+          "height": 3024,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/107925174277156677204\">Xuancheng Liu</a>"
+          ],
+          "photo_reference": "ATtYBwIWQxoXNN1g-6olZNGBoTP7QTm7tkfoOLws0RVpS1sqO50N7SHjwdNrI_GP3jxxGAmTIkRKKh87YrMXy2MHGRZenUloFa8t4c9HGCpScgigWZA4rkwp5SANtnPea25Cdm6XsPeRsx1qCmA6bAsDSHb76PkKtVYH3bOuBORHiY1pwepR",
+          "width": 4032
+        }
+      ],
+      "place_id": "ChIJ4VfBbetylVQR9vWYq5_z0YQ",
+      "plus_code": {
+        "compound_code": "96WX+72 Tigard, OR, USA",
+        "global_code": "84QV96WX+72"
+      },
+      "price_level": 2,
+      "rating": 4.2,
+      "reference": "ChIJ4VfBbetylVQR9vWYq5_z0YQ",
+      "scope": "GOOGLE",
+      "types": [
+        "meal_takeaway",
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "user_ratings_total": 910,
+      "vicinity": "7463 Southwest Bridgeport Road, Tigard"
+    }
+  ]
+}
