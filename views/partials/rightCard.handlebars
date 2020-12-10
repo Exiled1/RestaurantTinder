@@ -1,8 +1,14 @@
 <div id="right-card-container" class="card-container">
-	<ul>
-		<li>Open: {{opening_hours.open_now}}</li>
-		<li>Pricing: {{price_level}}</li>
-		<li>Dine in: {{has_dine_in}}</li>
-		<li>Take out: {{has_take_out}}</li>
-	</ul>
+	{{#if fields.open }}
+		<div>Open: {{restaurant.opening_hours.open_now}}</div>
+	{{/if}}
+	{{#if fields.price}}
+		<div>Pricing: {{restaurant.price_level}}</div>
+	{{/if}}
+	{{#if fields.dineIn}}
+		<div>Dine in</div>
+	{{/if}}
+	{{#if fields.takeOut}}
+		<div>Take out</div>
+	{{/if}}
 </div>

@@ -1,8 +1,12 @@
 <div id="left-card-container" class="card-container">
-	<ul>
-		<li>{{name}}</li>
-		<li>rating: {{rating}}</li>
-		<li>Total Reviews: {{user_ratings_total}}</li>
+	{{#if fields.name}}
+		<div>{{restaurant.name}}</div>
+	{{/if}}
+	{{#if fields.rating}}
+		<div>Rating: {{restaurant.rating}}</div>
+	{{/if}}
+	{{#if fields.totalReviews}}
+		<div>Total Reviews: {{restaurant.user_ratings_total}}</div>
+	{{/if}}
 		<!-- TODO add photo	-->
-	</ul>
 </div>

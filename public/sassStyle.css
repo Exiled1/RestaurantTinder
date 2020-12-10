@@ -45,7 +45,9 @@ body {
   margin: 50px;
   background-color: #F79C81;
   height: 500px;
-  width: 250px;
+  width: 600px;
+  font-size: 30px;
+  padding: 20px;
 }
 
 #button-container {
@@ -63,4 +65,56 @@ button {
   background-color: #223C78;
   color: #e87ea3;
   font-size: 50px;
+  cursor: pointer;
+}
+
+#modal-background {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background-color: rgba(0, 0, 0, 0.85);
+}
+
+#modal-menu {
+  background-color: #e87ea3;
+  width: 1000px;
+  height: 600px;
+  border-radius: 5px;
+  font-size: 50px;
+  margin: 40px auto;
+  margin-bottom: 0;
+  text-align: center;
+  vertical-align: middle;
+}
+
+#modal-matched-bar {
+  background-color: #E9EBEf;
+  border-radius: 5px;
+  font-size: 100px;
+  width: 1000px;
+  justify-content: center;
+  margin: auto;
+  text-align: center;
+  padding: 40px;
+}
+
+#modal-restaurant-title {
+  text-decoration: underline;
+}
+
+#modal-close-button {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  font-size: 50px;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
 }
