@@ -62,7 +62,7 @@ app.post('/getRestaurant', async function (req, res, next) {
 
   console.log(places[rdmIdx]);
 
-
+  //See about how we can actually get the data to show up on the webpage
 
   res.status(200).send('homepage', {
     restaurant: places[rdmIdx],
