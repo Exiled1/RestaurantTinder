@@ -89,16 +89,27 @@ button
 	left: 0
 	right: 0
 	z-index: 1000
-	background-color: rgba(0, 0, 0, 0.85)
+	background-color: $modal-background-color
 	display: flex
 	justify-content: center
 	align-items: center
+	flex-direction: column
 
 #modal-menu
-	background-color: $secondary-blue
+	background-color: $primary-pink
 	width: $modal-menu-width
 	height: $modal-menu-height
 	display: flex
 	justify-content: center
 	align-items: center
 	border-radius: $border-radius
+
+#modal-matched-bar
+	background-color: $background-grey
+	font-size: $title-font-size
+	width: $modal-menu-width
+	justify-content: center
+	display: flex
+	align-items: center
+	border-radius: $border-radius
+	padding: 20px
