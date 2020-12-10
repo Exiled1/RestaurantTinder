@@ -27,15 +27,7 @@ function leftButtonClick() {
 }
 
 function rightButtonClick() {
-	var postRequest = new XMLHttpRequest();
-	var reqURL = "/rightRestaurant";
-	postRequest.open("POST", reqURL);
-
-	postRequest.addEventListener('load', function (event) {
-		if (event.target.status !== 200) {
-		  alert("Error storing photo in database: " + event.target.response);
-		}
-	  });
-
-	postRequest.send();
+	document.getElementById("modal-background").classList.remove("hidden");
+	document.getElementById("modal-menu").classList.remove("hidden");
+	document.getElementById("modal-matched-bar").classList.remove("hidden");
 }
