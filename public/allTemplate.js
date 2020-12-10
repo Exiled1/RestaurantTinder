@@ -1,44 +1,172 @@
 (function() {
   var template = Handlebars.template, templates = Handlebars.templates = Handlebars.templates || {};
 templates['buttons'] = template({"compiler":[8,">= 4.3.0"],"main":function(container,depth0,helpers,partials,data) {
-    return "<div id=\"button-container\">\r\n	<button type=\"button\" id=\"left-button\">&lt-</button>\r\n	<button type=\"button\" id=\"right-button\">-&gt</i></button>\r\n</div>\r\n";
+    return "<div id=\"button-container\"> \r\n	<button type=\"button\" id=\"left-button\">&lt-</button>\r\n	<button type=\"button\" id=\"right-button\">-&gt</i></button>\r\n</div>\r\n";
 },"useData":true});
-templates['leftCard'] = template({"compiler":[8,">= 4.3.0"],"main":function(container,depth0,helpers,partials,data) {
-    var helper, alias1=depth0 != null ? depth0 : (container.nullContext || {}), alias2=container.hooks.helperMissing, alias3="function", alias4=container.escapeExpression, lookupProperty = container.lookupProperty || function(parent, propertyName) {
+templates['leftCard'] = template({"1":function(container,depth0,helpers,partials,data) {
+    var stack1, lookupProperty = container.lookupProperty || function(parent, propertyName) {
         if (Object.prototype.hasOwnProperty.call(parent, propertyName)) {
           return parent[propertyName];
         }
         return undefined
     };
 
-  return "<div id=\"left-card-container\" class=\"card-container\">\r\n	<ul>\r\n		<li>"
-    + alias4(((helper = (helper = lookupProperty(helpers,"name") || (depth0 != null ? lookupProperty(depth0,"name") : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"name","hash":{},"data":data,"loc":{"start":{"line":3,"column":6},"end":{"line":3,"column":14}}}) : helper)))
-    + "</li>\r\n		<li>rating: "
-    + alias4(((helper = (helper = lookupProperty(helpers,"rating") || (depth0 != null ? lookupProperty(depth0,"rating") : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"rating","hash":{},"data":data,"loc":{"start":{"line":4,"column":14},"end":{"line":4,"column":24}}}) : helper)))
-    + "</li>\r\n		<li>Total Reviews: "
-    + alias4(((helper = (helper = lookupProperty(helpers,"user_ratings_total") || (depth0 != null ? lookupProperty(depth0,"user_ratings_total") : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"user_ratings_total","hash":{},"data":data,"loc":{"start":{"line":5,"column":21},"end":{"line":5,"column":43}}}) : helper)))
-    + "</li>\r\n		<!-- TODO add photo	-->\r\n	</ul>\r\n</div>\r\n";
-},"useData":true});
-templates['restrauntprofile'] = template({"compiler":[8,">= 4.3.0"],"main":function(container,depth0,helpers,partials,data) {
-    return "<!-- I'm not sure what the plan for this file is. The user clicks on a restaurant\r\nand then the two cards are replaced with this page? What information will we have\r\non this page that won't be on the cards? -->\r\n";
-},"useData":true});
-templates['rightCard'] = template({"compiler":[8,">= 4.3.0"],"main":function(container,depth0,helpers,partials,data) {
-    var stack1, helper, alias1=container.escapeExpression, alias2=depth0 != null ? depth0 : (container.nullContext || {}), alias3=container.hooks.helperMissing, alias4="function", lookupProperty = container.lookupProperty || function(parent, propertyName) {
+  return "		<div>"
+    + container.escapeExpression(container.lambda(((stack1 = (depth0 != null ? lookupProperty(depth0,"restaurant") : depth0)) != null ? lookupProperty(stack1,"name") : stack1), depth0))
+    + "</div>\r\n";
+},"3":function(container,depth0,helpers,partials,data) {
+    var stack1, lookupProperty = container.lookupProperty || function(parent, propertyName) {
         if (Object.prototype.hasOwnProperty.call(parent, propertyName)) {
           return parent[propertyName];
         }
         return undefined
     };
 
-  return "<div id=\"right-card-container\" class=\"card-container\">\r\n	<ul>\r\n		<li>Open: "
-    + alias1(container.lambda(((stack1 = (depth0 != null ? lookupProperty(depth0,"opening_hours") : depth0)) != null ? lookupProperty(stack1,"open_now") : stack1), depth0))
-    + "</li>\r\n		<li>Pricing: "
-    + alias1(((helper = (helper = lookupProperty(helpers,"price_level") || (depth0 != null ? lookupProperty(depth0,"price_level") : depth0)) != null ? helper : alias3),(typeof helper === alias4 ? helper.call(alias2,{"name":"price_level","hash":{},"data":data,"loc":{"start":{"line":4,"column":15},"end":{"line":4,"column":30}}}) : helper)))
-    + "</li>\r\n		<li>Dine in: "
-    + alias1(((helper = (helper = lookupProperty(helpers,"has_dine_in") || (depth0 != null ? lookupProperty(depth0,"has_dine_in") : depth0)) != null ? helper : alias3),(typeof helper === alias4 ? helper.call(alias2,{"name":"has_dine_in","hash":{},"data":data,"loc":{"start":{"line":5,"column":15},"end":{"line":5,"column":30}}}) : helper)))
-    + "</li>\r\n		<li>Take out: "
-    + alias1(((helper = (helper = lookupProperty(helpers,"has_take_out") || (depth0 != null ? lookupProperty(depth0,"has_take_out") : depth0)) != null ? helper : alias3),(typeof helper === alias4 ? helper.call(alias2,{"name":"has_take_out","hash":{},"data":data,"loc":{"start":{"line":6,"column":16},"end":{"line":6,"column":32}}}) : helper)))
-    + "</li>\r\n	</ul>\r\n</div>\r\n";
+  return "		<div>Rating: "
+    + container.escapeExpression(container.lambda(((stack1 = (depth0 != null ? lookupProperty(depth0,"restaurant") : depth0)) != null ? lookupProperty(stack1,"rating") : stack1), depth0))
+    + "</div>\r\n";
+},"5":function(container,depth0,helpers,partials,data) {
+    var stack1, lookupProperty = container.lookupProperty || function(parent, propertyName) {
+        if (Object.prototype.hasOwnProperty.call(parent, propertyName)) {
+          return parent[propertyName];
+        }
+        return undefined
+    };
+
+  return "		<div>Total Reviews: "
+    + container.escapeExpression(container.lambda(((stack1 = (depth0 != null ? lookupProperty(depth0,"restaurant") : depth0)) != null ? lookupProperty(stack1,"user_ratings_total") : stack1), depth0))
+    + "</div>\r\n";
+},"compiler":[8,">= 4.3.0"],"main":function(container,depth0,helpers,partials,data) {
+    var stack1, alias1=depth0 != null ? depth0 : (container.nullContext || {}), lookupProperty = container.lookupProperty || function(parent, propertyName) {
+        if (Object.prototype.hasOwnProperty.call(parent, propertyName)) {
+          return parent[propertyName];
+        }
+        return undefined
+    };
+
+  return "<div id=\"left-card-container\" class=\"card-container\">\r\n"
+    + ((stack1 = lookupProperty(helpers,"if").call(alias1,((stack1 = (depth0 != null ? lookupProperty(depth0,"fields") : depth0)) != null ? lookupProperty(stack1,"name") : stack1),{"name":"if","hash":{},"fn":container.program(1, data, 0),"inverse":container.noop,"data":data,"loc":{"start":{"line":2,"column":1},"end":{"line":4,"column":8}}})) != null ? stack1 : "")
+    + ((stack1 = lookupProperty(helpers,"if").call(alias1,((stack1 = (depth0 != null ? lookupProperty(depth0,"fields") : depth0)) != null ? lookupProperty(stack1,"rating") : stack1),{"name":"if","hash":{},"fn":container.program(3, data, 0),"inverse":container.noop,"data":data,"loc":{"start":{"line":5,"column":1},"end":{"line":7,"column":8}}})) != null ? stack1 : "")
+    + ((stack1 = lookupProperty(helpers,"if").call(alias1,((stack1 = (depth0 != null ? lookupProperty(depth0,"fields") : depth0)) != null ? lookupProperty(stack1,"totalReviews") : stack1),{"name":"if","hash":{},"fn":container.program(5, data, 0),"inverse":container.noop,"data":data,"loc":{"start":{"line":8,"column":1},"end":{"line":10,"column":8}}})) != null ? stack1 : "")
+    + "		<!-- TODO add photo	-->\r\n</div>\r\n";
+},"useData":true});
+templates['restaurantprofile'] = template({"1":function(container,depth0,helpers,partials,data) {
+    var stack1, lookupProperty = container.lookupProperty || function(parent, propertyName) {
+        if (Object.prototype.hasOwnProperty.call(parent, propertyName)) {
+          return parent[propertyName];
+        }
+        return undefined
+    };
+
+  return "			<div id=\"modal-restaurant-title\">"
+    + container.escapeExpression(container.lambda(((stack1 = (depth0 != null ? lookupProperty(depth0,"restaurant") : depth0)) != null ? lookupProperty(stack1,"name") : stack1), depth0))
+    + "</div>\r\n";
+},"3":function(container,depth0,helpers,partials,data) {
+    var stack1, lookupProperty = container.lookupProperty || function(parent, propertyName) {
+        if (Object.prototype.hasOwnProperty.call(parent, propertyName)) {
+          return parent[propertyName];
+        }
+        return undefined
+    };
+
+  return "			<div>Rating: "
+    + container.escapeExpression(container.lambda(((stack1 = (depth0 != null ? lookupProperty(depth0,"restaurant") : depth0)) != null ? lookupProperty(stack1,"rating") : stack1), depth0))
+    + "</div>\r\n";
+},"5":function(container,depth0,helpers,partials,data) {
+    var stack1, lookupProperty = container.lookupProperty || function(parent, propertyName) {
+        if (Object.prototype.hasOwnProperty.call(parent, propertyName)) {
+          return parent[propertyName];
+        }
+        return undefined
+    };
+
+  return "			<div>Total Reviews: "
+    + container.escapeExpression(container.lambda(((stack1 = (depth0 != null ? lookupProperty(depth0,"restaurant") : depth0)) != null ? lookupProperty(stack1,"user_ratings_total") : stack1), depth0))
+    + "</div>\r\n";
+},"7":function(container,depth0,helpers,partials,data) {
+    var stack1, lookupProperty = container.lookupProperty || function(parent, propertyName) {
+        if (Object.prototype.hasOwnProperty.call(parent, propertyName)) {
+          return parent[propertyName];
+        }
+        return undefined
+    };
+
+  return "		<div>Open: "
+    + container.escapeExpression(container.lambda(((stack1 = ((stack1 = (depth0 != null ? lookupProperty(depth0,"restaurant") : depth0)) != null ? lookupProperty(stack1,"opening_hours") : stack1)) != null ? lookupProperty(stack1,"open_now") : stack1), depth0))
+    + "</div>\r\n";
+},"9":function(container,depth0,helpers,partials,data) {
+    var stack1, lookupProperty = container.lookupProperty || function(parent, propertyName) {
+        if (Object.prototype.hasOwnProperty.call(parent, propertyName)) {
+          return parent[propertyName];
+        }
+        return undefined
+    };
+
+  return "			<div>Pricing: "
+    + container.escapeExpression(container.lambda(((stack1 = (depth0 != null ? lookupProperty(depth0,"restaurant") : depth0)) != null ? lookupProperty(stack1,"price_level") : stack1), depth0))
+    + "</div>\r\n";
+},"11":function(container,depth0,helpers,partials,data) {
+    return "			<div>Dine in</div>\r\n";
+},"13":function(container,depth0,helpers,partials,data) {
+    return "			<div>Take out</div>\r\n";
+},"compiler":[8,">= 4.3.0"],"main":function(container,depth0,helpers,partials,data) {
+    var stack1, alias1=depth0 != null ? depth0 : (container.nullContext || {}), lookupProperty = container.lookupProperty || function(parent, propertyName) {
+        if (Object.prototype.hasOwnProperty.call(parent, propertyName)) {
+          return parent[propertyName];
+        }
+        return undefined
+    };
+
+  return "<div id=\"modal-background\" class=\"hidden\">\r\n	<div id=\"modal-menu\" class=\"hidden\">\r\n		<button id=\"modal-close-button\">x</button>\r\n"
+    + ((stack1 = lookupProperty(helpers,"if").call(alias1,((stack1 = (depth0 != null ? lookupProperty(depth0,"fields") : depth0)) != null ? lookupProperty(stack1,"name") : stack1),{"name":"if","hash":{},"fn":container.program(1, data, 0),"inverse":container.noop,"data":data,"loc":{"start":{"line":4,"column":2},"end":{"line":6,"column":9}}})) != null ? stack1 : "")
+    + ((stack1 = lookupProperty(helpers,"if").call(alias1,((stack1 = (depth0 != null ? lookupProperty(depth0,"fields") : depth0)) != null ? lookupProperty(stack1,"rating") : stack1),{"name":"if","hash":{},"fn":container.program(3, data, 0),"inverse":container.noop,"data":data,"loc":{"start":{"line":7,"column":2},"end":{"line":9,"column":9}}})) != null ? stack1 : "")
+    + ((stack1 = lookupProperty(helpers,"if").call(alias1,((stack1 = (depth0 != null ? lookupProperty(depth0,"fields") : depth0)) != null ? lookupProperty(stack1,"totalReviews") : stack1),{"name":"if","hash":{},"fn":container.program(5, data, 0),"inverse":container.noop,"data":data,"loc":{"start":{"line":10,"column":2},"end":{"line":12,"column":9}}})) != null ? stack1 : "")
+    + ((stack1 = lookupProperty(helpers,"if").call(alias1,((stack1 = (depth0 != null ? lookupProperty(depth0,"fields") : depth0)) != null ? lookupProperty(stack1,"open") : stack1),{"name":"if","hash":{},"fn":container.program(7, data, 0),"inverse":container.noop,"data":data,"loc":{"start":{"line":13,"column":2},"end":{"line":15,"column":9}}})) != null ? stack1 : "")
+    + ((stack1 = lookupProperty(helpers,"if").call(alias1,((stack1 = (depth0 != null ? lookupProperty(depth0,"fields") : depth0)) != null ? lookupProperty(stack1,"price") : stack1),{"name":"if","hash":{},"fn":container.program(9, data, 0),"inverse":container.noop,"data":data,"loc":{"start":{"line":16,"column":2},"end":{"line":18,"column":9}}})) != null ? stack1 : "")
+    + ((stack1 = lookupProperty(helpers,"if").call(alias1,((stack1 = (depth0 != null ? lookupProperty(depth0,"fields") : depth0)) != null ? lookupProperty(stack1,"dineIn") : stack1),{"name":"if","hash":{},"fn":container.program(11, data, 0),"inverse":container.noop,"data":data,"loc":{"start":{"line":19,"column":2},"end":{"line":21,"column":9}}})) != null ? stack1 : "")
+    + ((stack1 = lookupProperty(helpers,"if").call(alias1,((stack1 = (depth0 != null ? lookupProperty(depth0,"fields") : depth0)) != null ? lookupProperty(stack1,"takeOut") : stack1),{"name":"if","hash":{},"fn":container.program(13, data, 0),"inverse":container.noop,"data":data,"loc":{"start":{"line":22,"column":2},"end":{"line":24,"column":9}}})) != null ? stack1 : "")
+    + "		\r\n	</div>\r\n	<div id=\"modal-matched-bar\" class=\"hidden\">\r\n		It's a Match!\r\n	</div>\r\n</div>";
+},"useData":true});
+templates['rightCard'] = template({"1":function(container,depth0,helpers,partials,data) {
+    var stack1, lookupProperty = container.lookupProperty || function(parent, propertyName) {
+        if (Object.prototype.hasOwnProperty.call(parent, propertyName)) {
+          return parent[propertyName];
+        }
+        return undefined
+    };
+
+  return "		<div>Open: "
+    + container.escapeExpression(container.lambda(((stack1 = ((stack1 = (depth0 != null ? lookupProperty(depth0,"restaurant") : depth0)) != null ? lookupProperty(stack1,"opening_hours") : stack1)) != null ? lookupProperty(stack1,"open_now") : stack1), depth0))
+    + "</div>\r\n";
+},"3":function(container,depth0,helpers,partials,data) {
+    var stack1, lookupProperty = container.lookupProperty || function(parent, propertyName) {
+        if (Object.prototype.hasOwnProperty.call(parent, propertyName)) {
+          return parent[propertyName];
+        }
+        return undefined
+    };
+
+  return "		<div>Pricing: "
+    + container.escapeExpression(container.lambda(((stack1 = (depth0 != null ? lookupProperty(depth0,"restaurant") : depth0)) != null ? lookupProperty(stack1,"price_level") : stack1), depth0))
+    + "</div>\r\n";
+},"5":function(container,depth0,helpers,partials,data) {
+    return "		<div>Dine in</div>\r\n";
+},"7":function(container,depth0,helpers,partials,data) {
+    return "		<div>Take out</div>\r\n";
+},"compiler":[8,">= 4.3.0"],"main":function(container,depth0,helpers,partials,data) {
+    var stack1, alias1=depth0 != null ? depth0 : (container.nullContext || {}), lookupProperty = container.lookupProperty || function(parent, propertyName) {
+        if (Object.prototype.hasOwnProperty.call(parent, propertyName)) {
+          return parent[propertyName];
+        }
+        return undefined
+    };
+
+  return "<div id=\"right-card-container\" class=\"card-container\">\r\n"
+    + ((stack1 = lookupProperty(helpers,"if").call(alias1,((stack1 = (depth0 != null ? lookupProperty(depth0,"fields") : depth0)) != null ? lookupProperty(stack1,"open") : stack1),{"name":"if","hash":{},"fn":container.program(1, data, 0),"inverse":container.noop,"data":data,"loc":{"start":{"line":2,"column":1},"end":{"line":4,"column":8}}})) != null ? stack1 : "")
+    + ((stack1 = lookupProperty(helpers,"if").call(alias1,((stack1 = (depth0 != null ? lookupProperty(depth0,"fields") : depth0)) != null ? lookupProperty(stack1,"price") : stack1),{"name":"if","hash":{},"fn":container.program(3, data, 0),"inverse":container.noop,"data":data,"loc":{"start":{"line":5,"column":1},"end":{"line":7,"column":8}}})) != null ? stack1 : "")
+    + ((stack1 = lookupProperty(helpers,"if").call(alias1,((stack1 = (depth0 != null ? lookupProperty(depth0,"fields") : depth0)) != null ? lookupProperty(stack1,"dineIn") : stack1),{"name":"if","hash":{},"fn":container.program(5, data, 0),"inverse":container.noop,"data":data,"loc":{"start":{"line":8,"column":1},"end":{"line":10,"column":8}}})) != null ? stack1 : "")
+    + ((stack1 = lookupProperty(helpers,"if").call(alias1,((stack1 = (depth0 != null ? lookupProperty(depth0,"fields") : depth0)) != null ? lookupProperty(stack1,"takeOut") : stack1),{"name":"if","hash":{},"fn":container.program(7, data, 0),"inverse":container.noop,"data":data,"loc":{"start":{"line":11,"column":1},"end":{"line":13,"column":8}}})) != null ? stack1 : "")
+    + "</div>\r\n";
 },"useData":true});
 templates['settingsmenu'] = template({"compiler":[8,">= 4.3.0"],"main":function(container,depth0,helpers,partials,data) {
     return "";
