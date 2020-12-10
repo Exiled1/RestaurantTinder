@@ -62,12 +62,12 @@ app.post('/getRestaurant', async function (req, res, next) {
 
   console.log(places[rdmIdx]);
 
-  //See about how we can actually get the data to show up on the webpage
-
-  res.status(200).send('homepage', {
+  var data = {
     restaurant: places[rdmIdx],
     fields: detectFields(places[rdmIdx])
   });
+
+  res.status(200).send(data);
 });
 
 app.use(express.static('public')); //Leave this here. I'm getting a 404 if it's any higher up
