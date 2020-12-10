@@ -7,14 +7,24 @@ templates['leftCard'] = template({"compiler":[8,">= 4.3.0"],"main":function(cont
 })();
 */
 
+var latitude = 0;
+var longitude = 0;
+
+
 document.getElementById("left-button").addEventListener("click", leftButtonClick);
 document.getElementById("right-button").addEventListener("click", rightButtonClick);
 
+
+
+navigator.geolocation.getCurrentPosition(positionRetrieved, positionError);
 
 function leftButtonClick() {
 	var postRequest = new XMLHttpRequest();
 	var reqURL = "/getRestaurant";
 	postRequest.open("POST", reqURL);
+
+	navigator.geolocation.getCurrentPosition(positionRetrieved, positionError);
+	
 
 	postRequest.addEventListener('load', function (event) {
 		if (event.target.status !== 200) {
@@ -23,6 +33,15 @@ function leftButtonClick() {
 	  });
 
 	postRequest.send();
+}
+
+function positionRetrieved(position) {
+	latitude = position.coords.latitude;
+	longitude = position.coords.longitude;
+}
+
+function positionError(error) {
+	console.warn(`Unable to retrieve your location, ERROR(${err.code}): ${err.message}`);
 }
 
 function rightButtonClick() {
