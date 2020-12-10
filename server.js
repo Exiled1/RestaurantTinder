@@ -9,6 +9,8 @@
 var path = require('path');
 var express = require('express');
 var exphbs = require('express-handlebars');
+var fs = require('fs');
+var locData = require('./locationData');
 const createAPIHelper = require('./APIHelper');
 var latitudeLongitude = [45.409274, -122.722615]; //Default value if the user doesn't share their location
 var app = express();
@@ -56,16 +58,14 @@ app.post('/getRestaurant', async function (req, res, next) {
 
   let apiHelper = await createAPIHelper(longLat, 3000);
 
-  var places = apiHelper.apiDataObject;
-
-  var rdmIdx = Math.floor(Math.random() * places.length);
+  var places = loadRestaurants(longLat, apiHelper);
 
   console.log(places[rdmIdx]);
 
   var data = {
     restaurant: places[rdmIdx],
     fields: detectFields(places[rdmIdx])
-  });
+  };
 
   res.status(200).send(data);
 });
@@ -123,4 +123,35 @@ function detectFields(restaurant)
   }
 
   return fields;
+}
+
+function loadRestaurants(longLat, apiHelper)
+{
+  if(locData[longLat[0]][longLat[1]])
+  {
+    var places = locData[longLat[0]][longLat[1]];
+  }
+  else
+  {
+    var places = apiHelper.apiDataObject;
+    fs.writeFile(
+      __dirname + '/locationData.json',
+      JSON.stringify(locData, null, 2),
+      function (err, data) {
+        if(err)
+        {
+          console.log("  -- err:", err);
+          res.status(500).send("Error saving location to DB");
+        }
+        else
+        {
+          res.status(200).send("Location saved to DB");
+        }
+      }
+    )
+  }
+
+  var rdmIdx = Math.floor(Math.random() * places.length);
+
+  return places[rdmIdx];
 }
