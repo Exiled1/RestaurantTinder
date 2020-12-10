@@ -30,4 +30,20 @@ function rightButtonClick() {
 	document.getElementById("modal-background").classList.remove("hidden");
 	document.getElementById("modal-menu").classList.remove("hidden");
 	document.getElementById("modal-matched-bar").classList.remove("hidden");
+
+	document.getElementById("modal-close-button").addEventListener("click", hideModal);
+	document.addEventListener('keydown',
+		function (event) {
+			console.log(event.key);
+			if(event.key == "Escape") {
+				hideModal();
+			}
+		}
+	);
+}
+
+function hideModal() {
+	document.getElementById("modal-background").classList.add("hidden");
+	document.getElementById("modal-menu").classList.add("hidden");
+	document.getElementById("modal-matched-bar").classList.add("hidden");
 }
