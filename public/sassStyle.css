@@ -64,3 +64,26 @@ button {
   color: #e87ea3;
   font-size: 50px;
 }
+
+#modal-background {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background-color: rgba(0, 0, 0, 0.85);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#modal-menu {
+  background-color: #AFD6D7;
+  width: 1000px;
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+}
