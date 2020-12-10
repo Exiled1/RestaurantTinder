@@ -66,7 +66,7 @@ async function createAPIHelper(userLocation, userRadius) {
                         params: {
                             location: this.userLocation,
                             radius: this.userRadius,
-                            type: "food", // play around with this parameter, because it may not get back every specific restaurant that I need, especially if it's not called a restaurant.
+                            type: "restaurant", // play around with this parameter, because it may not get back every specific restaurant that I need, especially if it's not called a restaurant.
                             key: process.env.GOOGLE_MAPS_API_KEY
                         },
                         timeout: 2000 // milliseconds to wait for the request, otherwise, send an error.
