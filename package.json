@@ -7,9 +7,9 @@
         "test": "echo \"Error: no test specified\" && exit 1",
 		"dev": "nodemon server.js",
         "start": "node server.js",
-        "build": "handlebars views/partials/cards.handlebars -f public/cardsTemplate.js",
+        "build": "handlebars views/homepage.handlebars -f public/homepage.js",
         "prestart": "npm run build",
-        "predev": "npm run build"
+		"predev": "npm run build"
     },
     "repository": {
         "type": "git",

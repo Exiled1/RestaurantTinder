@@ -10,15 +10,13 @@ var path = require('path');
 var express = require('express');
 var exphbs = require('express-handlebars');
 const createAPIHelper = require('./APIHelper');
-const latitudeLongitude = [45.409274, -122.722615];
+var latitudeLongitude = [45.409274, -122.722615]; //Default value if the user doesn't share their location
 var app = express();
 var port = 3000;
 
 
-
-app.engine('handlebars', exphbs({
-    defaultLayout: 'main'
-}));
+//Setup layout
+app.engine('handlebars', exphbs({ defaultLayout: 'main' }));
 app.set('view engine', 'handlebars');
 
 //Simple get function using a predefined long and lat
