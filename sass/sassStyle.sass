@@ -1,7 +1,131 @@
-$main-font: 'Fira Code', monospace
-$primary-color: #333
+/*	TODO change this to dani's font	*/
+$main-font: 'Philosopher', sans-serif
+
+/*	Colors	*/
+$primary-pink: #e87ea3
+$primary-orange: #F79C81
+$primary-blue: #223C78
+$secondary-blue: #AFD6D7
+$background-grey: #E9EBEf
+
+$border-radius: 5px
+
+$header-size: 200px
+$icon-box-dimensions: 100px
+$title-font-size: 100px
+
+$card-height: 500px
+$card-width: 600px
+$card-margin: 50px
+$card-font-size: 30px
+
+$button-size: 100px
+$button-font-size: 50px
+
+$modal-background-color: rgba(0, 0, 0, 0.85)
+$modal-menu-width: 1000px
+$modal-menu-height: 600px
 
 body
-    font: 100% $main-font
-    color: $primary-color
+	margin: 0
+	border: 0
+	font-family: $main-font
+	color: $primary-blue
+	background-color: $background-grey
 
+#header-bar
+	height: $header-size
+	background-color: $primary-pink
+	font-size: $title-font-size
+	display: flex
+	flex-direction: row
+	align-items: center
+	justify-content: space-between
+
+#header-bar-settings-icon
+	margin: ( $header-size - $icon-box-dimensions ) / 2
+	height: $icon-box-dimensions
+	width: auto
+
+#header-space-holder
+	margin: ( $header-size - $icon-box-dimensions ) / 2
+	height: $icon-box-dimensions
+	width: $icon-box-dimensions
+
+#header-bar-text
+	text-decoration: none
+
+#card-content-container
+	display: flex
+	flex-direction: row
+	justify-content: center
+	align-content: center
+
+.card-container
+	margin: $card-margin
+	background-color: $primary-orange
+	height: $card-height
+	width: $card-width
+	font-size: $card-font-size
+	padding: 20px
+	
+#button-container
+	display: flex
+	flex-direction: row
+	justify-content: space-around
+	align-content: center
+
+button 
+	width: $button-size
+	height: $button-size
+	border-radius: $button-size / 2
+	border: none
+	background-color: $primary-blue
+	color: $primary-pink
+	font-size: $button-font-size
+	cursor: pointer
+
+#modal-background
+	position: fixed
+	top: 0
+	bottom: 0
+	left: 0
+	right: 0
+	z-index: 1000
+	background-color: $modal-background-color
+
+#modal-menu
+	background-color: $primary-pink
+	width: $modal-menu-width
+	height: $modal-menu-height
+	border-radius: $border-radius
+	font-size: $title-font-size / 2
+	margin: 40px auto
+	margin-bottom: 0
+	text-align: center
+	vertical-align: middle
+
+#modal-matched-bar
+	background-color: $background-grey
+	border-radius: $border-radius
+	font-size: $title-font-size
+	width: $modal-menu-width
+	justify-content: center
+	margin: auto
+	text-align: center
+	padding: 40px
+
+#modal-restaurant-title
+	text-decoration: underline
+
+#modal-close-button
+	position: absolute
+	right: 10px
+	top: 10px
+	font-size: 50px
+	border: none
+	background: none
+	cursor: pointer
+
+.hidden
+	display: none

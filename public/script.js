@@ -23,19 +23,26 @@ function leftButtonClick() {
 	  });
 
 	postRequest.send();
-
 }
 
 function rightButtonClick() {
-	var postRequest = new XMLHttpRequest();
-	var reqURL = "/rightRestaurant";
-	postRequest.open("POST", reqURL);
+	document.getElementById("modal-background").classList.remove("hidden");
+	document.getElementById("modal-menu").classList.remove("hidden");
+	document.getElementById("modal-matched-bar").classList.remove("hidden");
 
-	postRequest.addEventListener('load', function (event) {
-		if (event.target.status !== 200) {
-		  alert("Error storing photo in database: " + event.target.response);
+	document.getElementById("modal-close-button").addEventListener("click", hideModal);
+	document.addEventListener('keydown',
+		function (event) {
+			console.log(event.key);
+			if(event.key == "Escape") {
+				hideModal();
+			}
 		}
-	  });
+	);
+}
 
-	postRequest.send();
+function hideModal() {
+	document.getElementById("modal-background").classList.add("hidden");
+	document.getElementById("modal-menu").classList.add("hidden");
+	document.getElementById("modal-matched-bar").classList.add("hidden");
 }
